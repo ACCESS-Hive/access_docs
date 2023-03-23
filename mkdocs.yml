@@ -13,13 +13,13 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: light
-      primary: gold
+      primary: orange
       accent: brown
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: gold
+      primary: orange
       accent: brown
       toggle:
         icon: material/toggle-switch
