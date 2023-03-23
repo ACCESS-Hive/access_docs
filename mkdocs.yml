@@ -1,8 +1,8 @@
-site_name: ACCESS-NRI - Training
+site_name: ACCESS Community Documentation
 
 # Git repository
 repo_url: https://github.com/ACCESS-Hive/access_docs
-repo_name: Training
+repo_name: ACCESS-Community-Docs
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
 
@@ -13,14 +13,14 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: light
-      primary: yellow
-      accent: orange
+      primary: gold
+      accent: brown
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: yellow
-      accent: orange
+      primary: gold
+      accent: brown
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
