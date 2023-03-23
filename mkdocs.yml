@@ -58,7 +58,7 @@ nav:
     - index.md
     - License: LICENSE.md
   - UM and UM related:
-      - index.md
+      - um/index.md
       - Getting Started: um/getting_started.md
       - Learning Orientated Tutorials: um/tutorials/index.md
       - Goal Orientated How-To Guides: um/how-to/index.md
