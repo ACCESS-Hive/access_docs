@@ -1,7 +1,7 @@
 site_name: ACCESS-NRI - Training
 
 # Git repository
-repo_url: https://github.com/ACCESS-NRI/Training
+repo_url: https://github.com/ACCESS-Hive/access_docs
 repo_name: Training
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
@@ -13,14 +13,14 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: light
-      primary: indigo
-      accent: lime
+      primary: yellow
+      accent: orange
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: lime
+      primary: yellow
+      accent: orange
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -35,18 +35,8 @@ theme:
 
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/ACCESS_NRI
-      name: ACCESS-NRI on Twitter
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/access-nri
-      name: ACCESS-NRI on Linkedin
-    - icon: fontawesome/brands/slack
-      link: https://access-nri.slack.com/
-      name: Join ACCESS-NRI Slack Channel
 
-copyright: Copyright &copy; 2022 - ACCESS-NRI
+copyright: Copyright &copy; 2023 - ACCESS-NRI
 
 extra_css:
   - css/fontello.css
@@ -67,9 +57,9 @@ nav:
   - Welcome: 
     - index.md
     - License: LICENSE.md
-  - How-tos:
-    - Git and GitHub:
-      - HowTos/GitAndGitHub/index.md
-      - Basics: HowTos/GitAndGitHub/basics.md
-      - Git setup: HowTos/GitAndGitHub/git_setup.md
-      - GitHub setup: HowTos/GitAndGitHub/github_setup.md
+  - UM and UM related:
+      - Getting Started: um/getting_started.md
+      - Learning Orientated Tutorials: um/tutorials/index.md
+      - Goal Orientated How-To Guides: um/how-to/index.md
+      - Information Orientated References: um/reference/index.md
+      - Learning Orientated Discussion: um/discussion/index.md
