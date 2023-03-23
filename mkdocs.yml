@@ -6,7 +6,6 @@ repo_name: ACCESS-Community-Docs
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
 
-
 # Theme
 theme:
   name: material
