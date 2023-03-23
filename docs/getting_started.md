@@ -1,0 +1,1 @@
+This section should list important things that need to be set up before getting started with tutorials and how-to guides, e.g. accounts with NCI and MOSRS, ssh and ssh keys, setting up the software, etc. 
