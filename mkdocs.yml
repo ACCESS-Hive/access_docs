@@ -60,6 +60,10 @@ nav:
       - um/index.md
       - Getting Started: um/getting_started.md
       - Learning Orientated Tutorials: um/tutorials/index.md
-      - Goal Orientated How-To Guides: um/how-to/index.md
+      - Goal Orientated How-To Guides:
+        - um/how-to/index.md
+        - Change time frame: um/how-to/how-to-change-time-frame.md
+        - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
+        - Change ancillary files: um/how-to/how-to-change-ancillary-files.md
       - Information Orientated References: um/reference/index.md
       - Learning Orientated Discussion: um/discussion/index.md
