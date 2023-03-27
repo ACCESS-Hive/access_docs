@@ -60,6 +60,9 @@ nav:
       - um/index.md
       - Getting Started: um/getting_started.md
       - Learning Orientated Tutorials: um/tutorials/index.md
+        - Tutorial-one: um/tutorials/tutorial-one.md
+        - Tutorial-two: um/tutorials/tutorial-two.md
+        - Tutorial-three: um/tutorials/tutorial-three.md
       - Goal Orientated How-To Guides:
         - um/how-to/index.md
         - Change time frame: um/how-to/how-to-change-time-frame.md
