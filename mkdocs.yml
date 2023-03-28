@@ -64,17 +64,17 @@ nav:
         - Tutorial-one: um/tutorials/tutorial-one.md
         - Tutorial-two: um/tutorials/tutorial-two.md
         - Tutorial-three: um/tutorials/tutorial-three.md
-      - How-To Guides:
+      - How-to Guides:
         - um/how-to/index.md
         - Change Time Frame: um/how-to/how-to-change-time-frame.md
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
         - Change Ancillary Files: um/how-to/how-to-change-ancillary-files.md
-      - Information Orientated References: 
+      - References: 
         - um/references/index.md
         - Official UM Documentation: um/references/um-documentation.md
         - Cylc Documentation: um/references/cylc-documentation.md
         - Glossary: um/references/glossary.md
-      - Learning Orientated Discussion: 
+      - Background: 
         - um/discussion/index.md
         - Scientific References: um/discussion/sci-references.md
         - How Cylc Runs a Model: um/discussion/how-cylc-runs.md
