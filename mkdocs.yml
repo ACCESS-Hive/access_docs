@@ -59,12 +59,12 @@ nav:
   - UM and UM related:
       - um/index.md
       - Getting Started: um/getting_started.md
-      - Learning Orientated Tutorials: 
+      - Tutorials: 
         - um/tutorials/index.md
         - Tutorial-one: um/tutorials/tutorial-one.md
         - Tutorial-two: um/tutorials/tutorial-two.md
         - Tutorial-three: um/tutorials/tutorial-three.md
-      - Goal Orientated How-To Guides:
+      - How-To Guides:
         - um/how-to/index.md
         - Change Time Frame: um/how-to/how-to-change-time-frame.md
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
