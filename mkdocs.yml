@@ -72,6 +72,7 @@ nav:
       - References: 
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
+        - Scientific Tools: um/references/scitools.md
         - Cylc Documentation: um/references/cylc-documentation.md
         - Glossary: um/references/glossary.md
       - Background: 
