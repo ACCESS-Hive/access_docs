@@ -3,6 +3,6 @@ Contains various Goal-oriented How-to guides. This is the section that a user of
 
 Initial ideas include: 
 
-* How to change the time frame? 
-* How to add new diagnostics? 
-* How to change the ancillary files? 
+- How to change the time frame? 
+- How to add new diagnostics? 
+- How to change the ancillary files? 
