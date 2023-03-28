@@ -71,10 +71,10 @@ nav:
         - Change Ancillary Files: um/how-to/how-to-change-ancillary-files.md
       - References: 
         - um/references/index.md
-        - Official UM Documentation: um/references/um-documentation.md
+        - UM Documentation: um/references/um-documentation.md
         - Cylc Documentation: um/references/cylc-documentation.md
         - Glossary: um/references/glossary.md
       - Background: 
-        - um/discussion/index.md
-        - Scientific References: um/discussion/sci-references.md
-        - How Cylc Runs a Model: um/discussion/how-cylc-runs.md
+        - um/background/index.md
+        - Scientific References: um/background/sci-references.md
+        - How Cylc Runs a Model: um/background/how-cylc-runs.md
