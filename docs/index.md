@@ -1,4 +1,4 @@
-# Documentation relevants for ACCESS Models
+# Relevant Documentation for ACCESS Models
 
 This sites contains ACCESS model related documentation contributed by the community.
 
