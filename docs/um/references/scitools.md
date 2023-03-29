@@ -1,4 +1,4 @@
-### Documentation of Scientific Tools 
+# Documentation of Scientific Tools 
 
 ## Iris 
 Iris is an open source Python library for analysing and visualising meteorological and oceanographic data sets, initially developed at the Met Office. 
@@ -15,10 +15,10 @@ Iris uses ​matplotlib for graphics and ​cartopy (also from the Met Office) f
 ## NCI implementation of the UM rose stem tests
 Since vn10.0 there have been NCI versions of some of the UM rose stem tests, e.g. ​https://code.metoffice.gov.uk/trac/um/wiki/StandardJobs. These tests all use identical configurations to the Met Office tests except that for some of the N48 tests small processor decompositions like 2x2 have been converted to use a full node.
 
-# Running the tests
+### Running the tests
 
-# Compiler and MPI versions
+### Compiler and MPI versions
 
-# Automated testing
+### Automated testing
 
-# Management
+### Management
