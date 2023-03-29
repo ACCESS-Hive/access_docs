@@ -1,4 +1,4 @@
-### UM-related documentation
+# UM-related documentation
 
 ## Status of ACCESS implementation of UM versions
 
@@ -9,13 +9,15 @@ For a top-level list of use cases and links to documentation about building and 
 *Newest version at the top*
 
 __UM vn13.1__
+...
 
 __UM vn13.0__  
+...
 
 ## Building and Managing ACCESS UM Executables
 
-# Access NWP Build Documentation
+### Access NWP Build Documentation
 
-# Using Prebuilds
+### Using Prebuilds
 
-# Interactive debugging
+### Interactive debugging

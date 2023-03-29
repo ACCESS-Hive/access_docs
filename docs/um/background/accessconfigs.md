@@ -1,8 +1,8 @@
 
-### ACCESS Model Configurations
+# ACCESS Model Configurations
 
 ## ACCESS-ESM 1.5
-# Components
+### Components
 
 | COMPONENT     | MODEL         | VERSION           |
 | ------------- | ------------- | ----------------- |
@@ -12,7 +12,7 @@
 | Sea Ice       | CICE          | 4.1               |
 | Coupler       | OASIS-MCT     | 3                 |
 
-# Experiments
+### Experiments
 __Standard CMIP6 Scenarios__:
 
 | Experiment    | Control       | Link                                         |
