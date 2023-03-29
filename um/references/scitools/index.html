@@ -12,7 +12,7 @@
         <link rel="prev" href="../um-documentation/">
       
       
-        <link rel="next" href="../glossary/">
+        <link rel="next" href="../rose-cylc-doc/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
@@ -676,6 +676,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Scientific Tools
@@ -692,19 +694,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-of-scientific-tools" class="md-nav__link">
-    Documentation of Scientific Tools
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#iris" class="md-nav__link">
@@ -718,33 +715,39 @@
     NCI implementation of the UM rose stem tests
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="NCI implementation of the UM rose stem tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#running-the-tests" class="md-nav__link">
     Running the tests
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#compiler-and-mpi-versions" class="md-nav__link">
     Compiler and MPI versions
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#automated-testing" class="md-nav__link">
     Automated testing
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#management" class="md-nav__link">
     Management
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -763,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cylc-documentation.md" class="md-nav__link">
+      <a href="../rose-cylc-doc/" class="md-nav__link">
         Cylc Documentation
       </a>
     </li>
@@ -815,6 +818,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -835,6 +842,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/access-configs/" class="md-nav__link">
+        Access Model Configurations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/ancillary-files/" class="md-nav__link">
+        Ancillary Files
+      </a>
+    </li>
+  
+
             
           
             
@@ -895,19 +930,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-of-scientific-tools" class="md-nav__link">
-    Documentation of Scientific Tools
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#iris" class="md-nav__link">
@@ -921,33 +951,39 @@
     NCI implementation of the UM rose stem tests
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="NCI implementation of the UM rose stem tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#running-the-tests" class="md-nav__link">
     Running the tests
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#compiler-and-mpi-versions" class="md-nav__link">
     Compiler and MPI versions
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#automated-testing" class="md-nav__link">
     Automated testing
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#management" class="md-nav__link">
     Management
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -969,7 +1005,7 @@
   
 
 
-<h3 id="documentation-of-scientific-tools">Documentation of Scientific Tools</h3>
+<h1 id="documentation-of-scientific-tools">Documentation of Scientific Tools</h1>
 <h2 id="iris">Iris</h2>
 <p>Iris is an open source Python library for analysing and visualising meteorological and oceanographic data sets, initially developed at the Met Office. </p>
 <p>Useful links: </p>
@@ -982,10 +1018,10 @@
 <p>Iris uses ​matplotlib for graphics and ​cartopy (also from the Met Office) for mapping (replacing ​basemap). </p>
 <h2 id="nci-implementation-of-the-um-rose-stem-tests">NCI implementation of the UM rose stem tests</h2>
 <p>Since vn10.0 there have been NCI versions of some of the UM rose stem tests, e.g. ​https://code.metoffice.gov.uk/trac/um/wiki/StandardJobs. These tests all use identical configurations to the Met Office tests except that for some of the N48 tests small processor decompositions like 2x2 have been converted to use a full node.</p>
-<h1 id="running-the-tests">Running the tests</h1>
-<h1 id="compiler-and-mpi-versions">Compiler and MPI versions</h1>
-<h1 id="automated-testing">Automated testing</h1>
-<h1 id="management">Management</h1>
+<h3 id="running-the-tests">Running the tests</h3>
+<h3 id="compiler-and-mpi-versions">Compiler and MPI versions</h3>
+<h3 id="automated-testing">Automated testing</h3>
+<h3 id="management">Management</h3>
 
 
 
