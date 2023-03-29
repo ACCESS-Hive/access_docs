@@ -1,11 +1,12 @@
-# How to Modify Ancillary files
+# Ancillary files
+
 
 ## Creating ancillary files from netcdf
 *Needs updating!*
 
 
 ## Ancillary file modification
-### How to edit land sea masks
+### Editing land sea masks
 mask_edit.py is a GUI editor for land-sea masks, allowing flipping selected points from land to sea or vice-versa. Creates a list of changes that can be used by the CAP.
 
 For more details see [AncillaryFileModification](https://accessdev.nci.org.au/trac/wiki/access/AncillaryFileModification).
@@ -32,7 +33,7 @@ For more details see [AncillaryFileModification](https://accessdev.nci.org.au/tr
 
 ### Alter values of a particular field
 
-## How to convert to netCDF
+## Converting to netCDF
 ### Climate model output
 ### UM timeseries output
 ### Variable grid model

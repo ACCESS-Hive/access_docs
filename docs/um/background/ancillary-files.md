@@ -19,7 +19,11 @@ Code repository, trac, documentation, e.g [ANCIL](​https://code.metoffice.gov.
 ## ACCESS grid namelists
 
 ## Various issues
+
 ### Orography source data problems
+#### High Resolution Australian Orography
+The Met Office ancillary file generation package includes the GLOBE30 orography dataset. This has 30 second or approximately 1 km resolution. The orography ancillaries for APS0 were generated from the GLOBE1 1 minute resolution dataset which is all we had at the time. The Met Office documentation now calls this an interim resolution that's discouraged. A quick comparison suggests it's close to a simple average of the 30 minute data. 
+For more information see [Martin Dix's post](https://accessdev.nci.org.au/trac/wiki/access/HighResolutionAustralianOrography).
 ### Mask issues
 
 ## Various python utilities

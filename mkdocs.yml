@@ -68,7 +68,7 @@ nav:
         - um/how-to/index.md
         - Change Time Frame: um/how-to/how-to-change-time-frame.md
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
-        - Change Ancillary Files: um/how-to/how-to-change-ancillary-files.md
+        - Change Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
       - References: 
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
