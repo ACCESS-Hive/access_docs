@@ -1,5 +1,5 @@
 # Ancillary files
-This serves as an index page for various information on ancillary files
+This serves as an index page for various information on ancillary files.
 
 Ancillary files are the mechanism by which external data sources are entered into the Unified Model (UM). This includes model orography, soil and vegetation types, climatologies for sea surface temperature and sea ice.
 

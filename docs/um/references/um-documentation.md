@@ -14,6 +14,12 @@ __UM vn13.1__
 __UM vn13.0__  
 ...
 
+## Installing new UM versions on Gadi
+### Building GCOM from shared repository
+GCOM is an MPI wrapper library that the UM uses.
+
+### GCOM 5.2
+
 ## Building and Managing ACCESS UM Executables
 
 ### Access NWP Build Documentation
