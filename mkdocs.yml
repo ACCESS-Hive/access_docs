@@ -68,7 +68,8 @@ nav:
         - um/how-to/index.md
         - Change Time Frame: um/how-to/how-to-change-time-frame.md
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
-        - Change Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
+        - Modify Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
+        - Troubleshooting: um/how-to/how-to-troubleshoot.md
       - References: 
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
@@ -80,4 +81,5 @@ nav:
         - Access Model Configurations: um/background/access-configs.md
         - Ancillary Files: um/background/ancillary-files.md
         - Scientific References: um/background/sci-references.md
-        - How Cylc Runs a Model: um/background/how-cylc-runs.md
+        - ACCESS Climate Suite Structure: um/background/access-climate-suite-structure.md
+        - Model Input and Forcing: um/background/model-input-and-forcing.md
