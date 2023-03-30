@@ -81,7 +81,7 @@ nav:
         - Scientific Tools: um/references/scitools.md
         - Cylc Documentation: um/references/rose-cylc-doc.md
         - Glossary: um/references/glossary.md
-      - More Technical Details: 
+      - ACCESS Technical Details: 
         - um/access-tech-info/index.md
         - Access Model Configurations: um/access-tech-info/access-configs.md
         - Ancillary Files: um/access-tech-info/ancillary-files.md
