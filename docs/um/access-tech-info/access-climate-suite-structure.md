@@ -11,7 +11,7 @@ For a top-level list of use cases and links to documentation about building and 
 ### JULES Updates
 
 ### GCOM Updates
-### Building GCOM from shared repository
+#### Building GCOM from shared repository
 GCOM is an MPI wrapper library that the UM uses.
 
-### GCOM 5.2
+#### GCOM 5.2

@@ -82,11 +82,11 @@ nav:
         - Cylc Documentation: um/references/rose-cylc-doc.md
         - Glossary: um/references/glossary.md
       - More Technical Details: 
-        - um/background/index.md
-        - Access Model Configurations: um/background/access-configs.md
-        - Ancillary Files: um/background/ancillary-files.md
-        - Scientific References: um/background/sci-references.md
-        - ACCESS Climate Suite Structure: um/background/access-climate-suite-structure.md
-        - Model Input and Forcing: um/background/model-input-and-forcing.md
+        - um/access-tech-info/index.md
+        - Access Model Configurations: um/access-tech-info/access-configs.md
+        - Ancillary Files: um/access-tech-info/ancillary-files.md
+        - Scientific References: um/access-tech-info/sci-references.md
+        - ACCESS Climate Suite Structure: um/access-tech-info/access-climate-suite-structure.md
+        - Model Input and Forcing: um/access-tech-info/model-input-and-forcing.md
       
         
