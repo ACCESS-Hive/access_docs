@@ -59,6 +59,11 @@ nav:
   - UM and UM related:
       - um/index.md
       - Getting Started: um/getting_started.md
+      - UM Partnership Resources: 
+        - um/um-partner-resources/index.md
+        - RMED: um/um-partner-resources/rmed.md
+        - GMED: um/um-partner-resources/gmed.md
+        - LFRic: um/um-partner-resources/lfric.md
       - Tutorials: 
         - um/tutorials/index.md
         - Tutorial-one: um/tutorials/tutorial-one.md
@@ -76,10 +81,12 @@ nav:
         - Scientific Tools: um/references/scitools.md
         - Cylc Documentation: um/references/rose-cylc-doc.md
         - Glossary: um/references/glossary.md
-      - Background: 
+      - More Technical Details: 
         - um/background/index.md
         - Access Model Configurations: um/background/access-configs.md
         - Ancillary Files: um/background/ancillary-files.md
         - Scientific References: um/background/sci-references.md
         - ACCESS Climate Suite Structure: um/background/access-climate-suite-structure.md
         - Model Input and Forcing: um/background/model-input-and-forcing.md
+      
+        
