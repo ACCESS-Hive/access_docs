@@ -1,3 +1,3 @@
 # Global Model Evaluation and Development (GMED)
 
-[Global Model Evaluation and Development pages](https://code.metoffice.gov.uk/trac/gmed)
+The [Global Model Evaluation and Development](https://code.metoffice.gov.uk/trac/gmed) group develops the global model, which is used across all timescales from Weather, Seasonal to Climate forecasting.
