@@ -1,4 +1,4 @@
-# UM-related Documentation
+# UM-Partner resources
 
 The [Unified Model (UM)](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model), which is a numerical model of the atmosphere used for both weather and climate applications, has been adopted as the atmospheric model component for the different Australian Community Climate and Earth System Simulator (ACCESS) model suites.
 

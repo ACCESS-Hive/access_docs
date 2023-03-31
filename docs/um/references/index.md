@@ -1,7 +1,7 @@
-# Technical Documentation and References
-This section contains information-orientated references and, thus, will be the most technical part of the documentation. An extensive glossary should also be included.\
+# Technical References
+This section contains technical parts of the documentation and an extensive glossary.
 
 External Resources that we might point to include:
 
 - Official UM documentation:  UMDP (technical part)
-- Cylc documentation 
+- Rose and Cylc documentation 

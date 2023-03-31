@@ -1,4 +1,4 @@
-# Documentation of Scientific Tools 
+# Scientific Tools Documentation
 
 ## Iris 
 Iris is an open source Python library for analysing and visualising meteorological and oceanographic data sets, initially developed at the Met Office. 

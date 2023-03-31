@@ -10,4 +10,4 @@ Each tutorial should have a precise path:
 
 Since the suite should be specifically designed for this task, the instructions should be verbose and specific. 
 
-Here we could link to the content in the [UM User Tutorial](https://code.metoffice.gov.uk/trac/jumps/wiki/UMTutorial2023) that was held from 06-10 February 2023, at the Bureau of Meteorology, Melbourne.
+Here is a link to the content in the [UM User Tutorial](https://code.metoffice.gov.uk/trac/jumps/wiki/UMTutorial2023) that was held from 06-10 February 2023, at the Bureau of Meteorology in Melbourne.

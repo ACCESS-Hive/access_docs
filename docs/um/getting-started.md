@@ -1,4 +1,4 @@
-# Getting Started with ACCESS model suites
+# Getting Started with ACCESS suites
 
 This section outlines important steps that need to be taken before getting started with tutorials and how-to guides, e.g. NCI and MOSRS accounts, ssh and ssh keys, software setup, etc. 
 
