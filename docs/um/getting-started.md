@@ -9,4 +9,4 @@ More information on how to set-up your account to use this environment can be fo
 ## Met Office
 More general information on how to apply for a Met Office Science Repository Service (MOSR) account can be found on the [Met Office wiki](https://code.metoffice.gov.uk/trac/home/wiki/FAQ). 
 
-- *Note:* Additional steps are needed on how to get access to Met Office sharepoint and Yammer.
+*Note:* Additional steps are needed on how to get access to Met Office sharepoint and Yammer.
