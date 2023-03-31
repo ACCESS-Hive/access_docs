@@ -1,6 +1,6 @@
-# How to troubleshoot Problems
+# How to Troubleshoot Problems
 
-## System and MPI-related problems
+## System and MPI-related Problems
 
 ## Configuration Problems
 

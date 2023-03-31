@@ -1,24 +1,24 @@
-# Ancillary files
+# Ancillary Files
 This serves as an index page for various information on ancillary files.
 
 Ancillary files are the mechanism by which external data sources are entered into the Unified Model (UM). This includes model orography, soil and vegetation types, climatologies for sea surface temperature and sea ice.
 
-## Purpose of ancillary files
+## Purpose of Ancillary Files
 [UMDP 70 Ancillary File Data Sources](​https://nf.nci.org.au/facilities/software/UM/7.8/umdoc_system/UM_docs/papers/pdf/p070.pdf)
 
 [UMDP 73 Ancillary File Creation](​https://nf.nci.org.au/facilities/software/UM/7.8/umdoc_system/UM_docs/papers/pdf/p073.pdf)
 
-## Ancillary files at NCI
+## Ancillary Files at NCI
 Rose stem suites expect ancillary files to be in ...
 
-## Ancillary generation code
+## Ancillary Generation Code
 Code repository, trac, documentation, e.g [ANCIL](​https://code.metoffice.gov.uk/trac/ancil)
 
-## Suites for ancillary files
+## Suites for Ancillary Files
 
-## ACCESS grid namelists
+## ACCESS Grid Namelists
 
-## Various issues
+## Various Issues
 
 ### Orography source data problems
 #### High Resolution Australian Orography
