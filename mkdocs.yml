@@ -58,7 +58,7 @@ nav:
     - License: LICENSE.md
   - UM and UM related:
       - um/index.md
-      - Getting Started: um/getting_started.md
+      - Getting Started: um/getting-started.md
       - UM Partnership Resources: 
         - um/um-partner-resources/index.md
         - RMED: um/um-partner-resources/rmed.md
