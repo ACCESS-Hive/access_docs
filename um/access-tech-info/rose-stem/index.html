@@ -9,17 +9,15 @@
       
       
       
-        <link rel="prev" href="../access-climate-suite-structure/">
+        <link rel="prev" href="../install-um-release/">
       
-      
-        <link rel="next" href="../install-um-release/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Model Input and Forcing - ACCESS Community Documentation</title>
+        <title>UM and JULES rose-stem testing - ACCESS Community Documentation</title>
       
     
     
@@ -73,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-inputs-and-forcings" class="md-skip">
+        <a href="#rose-stem" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Model Input and Forcing
+              UM and JULES rose-stem testing
             
           </span>
         </div>
@@ -942,59 +940,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Model Input and Forcing
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../model-input-and-forcing/" class="md-nav__link">
         Model Input and Forcing
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#model-inputs" class="md-nav__link">
-    Model inputs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#forcing" class="md-nav__link">
-    Forcing
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1018,11 +968,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../rose-stem/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UM and JULES rose-stem testing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         UM and JULES rose-stem testing
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#um" class="md-nav__link">
+    UM
+  </a>
+  
+    <nav class="md-nav" aria-label="UM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-kgos" class="md-nav__link">
+    Updating KGOs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jules" class="md-nav__link">
+    JULES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfric" class="md-nav__link">
+    LFRic
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1068,15 +1093,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#model-inputs" class="md-nav__link">
-    Model inputs
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forcing" class="md-nav__link">
-    Forcing
+  <a href="#um" class="md-nav__link">
+    UM
+  </a>
+  
+    <nav class="md-nav" aria-label="UM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-kgos" class="md-nav__link">
+    Updating KGOs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jules" class="md-nav__link">
+    JULES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfric" class="md-nav__link">
+    LFRic
   </a>
   
 </li>
@@ -1099,10 +1151,26 @@
   
 
 
-<h1 id="model-inputs-and-forcings">Model Inputs and Forcings</h1>
-<h2 id="model-inputs">Model inputs</h2>
-<p>List of all the input files, explanation of what they are and where they come from</p>
-<h2 id="forcing">Forcing</h2>
+<h1 id="rose-stem">Rose stem</h1>
+<h2 id="overview">Overview</h2>
+<p>The UM, JULES and LFRic all use rose stem for testing and as part of the ticket approval process (e.g., <a href="https://code.metoffice.gov.uk/trac/um/wiki/working_practices#HowshouldItestmychanges">UM working practices</a>). There are NCI build and test configurations in all these.</p>
+<p>The UM and JULES compare results to "known good output" files on disk whereas LFRic uses checksums (currently in the repository).</p>
+<p>UM files are in <code>/g/data/access/KGO/standard_jobs/ifort20</code> and JULES in <code>/g/data/access/jules/rose-stem-kgo</code>. These need to be updated for new model releases and also when code changes between releases change results. This is rare with JULES but common with UM. The UM has an update script to make updating files simply but JULES does not.</p>
+<h2 id="um">UM</h2>
+<p>For a description of the structure of the UM rose stem suite see <a href="https://code.metoffice.gov.uk/trac/um/wiki/RoseStem/Introduction">UM rose stem intro</a>.</p>
+<p>The NCI configuration has two main groups, <code>nightly</code> and <code>weekly</code> (equivalent to <code>nci</code>), defined in <code>rose-stem/site/nci/groups.rc</code>.  These include a subset of the tests that the Met Office run, <a href="https://code.metoffice.gov.uk/trac/um/wiki/StandardJobs">UM rose stem standard jobs</a>.</p>
+<p>THe NCI <code>developer</code> group is quite sparse, so our convention has been to run the full <code>nci</code> group as part of the ticket approval process.</p>
+<h3 id="updating-kgos">Updating KGOs</h3>
+<p>The NCI configuration follows the Met Office definitions for the KGO variables for each test, see <a href="https://code.metoffice.gov.uk/trac/um/browser/main/trunk/rose-stem/site/meto/variables_xc40.rc">variables.rc</a></p>
+<p>For a new release see <a href="../install-um-release/#um">new UM release</a>.</p>
+<p>For a change between releases these may be updated as part of the Met Office commit process. Some times we may be advised on potential changes in advance, but more commonly we just see that <code>rose-ana</code> tasks have failed. The useful message is actually in <code>job.out</code> rather than <code>job.err</code>.</p>
+<p>The same <code>kgo_update.py</code> script used for new releases can be used to update the KGOs for the ticket.
+<div class="highlight"><pre><span></span><code>python2 kgo_update.py -S um_trunk -U $USER --non-interactive
+</code></pre></div></p>
+<h2 id="jules">JULES</h2>
+<p>For a new release see <a href="../install-um-release/#jules">new JULES release</a>.</p>
+<h2 id="lfric">LFRic</h2>
+<p>Run by BOM from gitlab?</p>
 
 
 
