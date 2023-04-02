@@ -41,7 +41,7 @@ extra_css:
   - css/fontello.css
 
 # Extensions
-markdown_extensions: 
+markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -50,21 +50,21 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
-  
+
 # Navigation
 nav:
-  - Welcome: 
+  - Welcome:
     - index.md
     - License: LICENSE.md
   - UM and UM related:
       - um/index.md
       - Getting Started: um/getting-started.md
-      - UM Partnership Resources: 
+      - UM Partnership Resources:
         - um/um-partner-resources/index.md
         - RMED: um/um-partner-resources/rmed.md
         - GMED: um/um-partner-resources/gmed.md
         - LFRic: um/um-partner-resources/lfric.md
-      - Tutorials: 
+      - Tutorials:
         - um/tutorials/index.md
         - Tutorial-one: um/tutorials/tutorial-one.md
         - Tutorial-two: um/tutorials/tutorial-two.md
@@ -75,18 +75,18 @@ nav:
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
         - Modify Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
         - Troubleshooting: um/how-to/how-to-troubleshoot.md
-      - References: 
+      - References:
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
         - Scientific Tools: um/references/scitools.md
         - Cylc Documentation: um/references/rose-cylc-doc.md
         - Glossary: um/references/glossary.md
-      - ACCESS Technical Details: 
+      - ACCESS Technical Details:
         - um/access-tech-info/index.md
         - Access Model Configurations: um/access-tech-info/access-configs.md
         - Ancillary Files: um/access-tech-info/ancillary-files.md
         - Scientific References: um/access-tech-info/sci-references.md
         - ACCESS Climate Suite Structure: um/access-tech-info/access-climate-suite-structure.md
         - Model Input and Forcing: um/access-tech-info/model-input-and-forcing.md
-      
-        
+        - Installing new UM and JULES releases: um/access-tech-info/install-um-release.md
+        - UM and JULES rose-stem testing: um/access-tech-info/rose-stem.md
