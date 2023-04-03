@@ -1,0 +1,2 @@
+# Tutorial: Running a Standard Suite  
+The UM is used in global, limited-area, and climate configurations. This tutorial will demonstrate how to run the UM through Rose by running a standard suite with standard science settings. To demonstrate how to run the UM through Rose we will start by running a standard suite.

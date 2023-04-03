@@ -66,9 +66,9 @@ nav:
         - LFRic: um/um-partner-resources/lfric.md
       - Tutorials:
         - um/tutorials/index.md
-        - Tutorial-one: um/tutorials/tutorial-one.md
-        - Tutorial-two: um/tutorials/tutorial-two.md
-        - Tutorial-three: um/tutorials/tutorial-three.md
+        - Tutorial-one: um/tutorials/run-suite-tut.md
+        - Tutorial-two: um/tutorials/regional-suite-tut.md
+        - Tutorial-three: um/tutorials/climate-suite-tut.md
       - How-to Guides:
         - um/how-to/index.md
         - Change Time Frame: um/how-to/how-to-change-time-frame.md
