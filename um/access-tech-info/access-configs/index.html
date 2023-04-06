@@ -908,6 +908,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#access-cm2" class="md-nav__link">
+    ACCESS-CM2
+  </a>
+  
+    <nav class="md-nav" aria-label="ACCESS-CM2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#access-esm-15" class="md-nav__link">
     ACCESS-ESM 1.5
   </a>
@@ -916,7 +936,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
+  <a href="#components_1" class="md-nav__link">
     Components
   </a>
   
@@ -1111,6 +1131,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#access-cm2" class="md-nav__link">
+    ACCESS-CM2
+  </a>
+  
+    <nav class="md-nav" aria-label="ACCESS-CM2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#access-esm-15" class="md-nav__link">
     ACCESS-ESM 1.5
   </a>
@@ -1119,7 +1159,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
+  <a href="#components_1" class="md-nav__link">
     Components
   </a>
   
@@ -1156,7 +1196,7 @@
 
 
 <h1 id="access-model-configurations">ACCESS Model Configurations</h1>
-<h2 id="access-esm-15">ACCESS-ESM 1.5</h2>
+<h2 id="access-cm2">ACCESS-CM2</h2>
 <h3 id="components">Components</h3>
 <table>
 <thead>
@@ -1169,17 +1209,61 @@
 <tbody>
 <tr>
 <td>Atmosphere</td>
-<td>Unified Model</td>
+<td>UM</td>
+<td>10.6</td>
+</tr>
+<tr>
+<td>Land Surface</td>
+<td>CABLE</td>
+<td>2.5 (integrated in UM)</td>
+</tr>
+<tr>
+<td>Ocean</td>
+<td>MOM</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Sea Ice</td>
+<td>CICE</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td>Coupler</td>
+<td>OASIS-MCT</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>ACCESS-CM2 comprises: 
+- Atmosphere model (UM10.6): N96 resolution (1.875° x 1.25°, 85 levels). Physical model only – no carbon cycle.
+- Land surface model (CABLE2.5) 
+- Ocean model (MOM5): Tripolar grid, 1° resolution, 50 levels.
+- Sea ice model (CICE5.1) </p>
+<hr />
+<h2 id="access-esm-15">ACCESS-ESM 1.5</h2>
+<h3 id="components_1">Components</h3>
+<table>
+<thead>
+<tr>
+<th>COMPONENT</th>
+<th>MODEL</th>
+<th>VERSION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atmosphere</td>
+<td>UM</td>
 <td>7.3</td>
 </tr>
 <tr>
 <td>Land Surface</td>
 <td>CABLE</td>
-<td>(integrated in UM)</td>
+<td>2.4 (integrated in UM)</td>
 </tr>
 <tr>
 <td>Ocean</td>
-<td>UniMOM</td>
+<td>MOM</td>
 <td>5</td>
 </tr>
 <tr>
@@ -1194,6 +1278,10 @@
 </tr>
 </tbody>
 </table>
+<p>ACCESS-ESM 1.5 comprises: 
+- Atmosphere model (UM7.3): N96 resolution (1.875° x 1.25°, 38 levels). 
+- Land surface model (CABLE2.4): same horizontal resolution as atmosphere (1.875° x 1.25°).
+- Ocean model (MOM5): 1° resolution, 50 levels.</p>
 <h3 id="experiments">Experiments</h3>
 <p><strong>Standard CMIP6 Scenarios</strong>:</p>
 <table>
