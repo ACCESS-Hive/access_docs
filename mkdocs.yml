@@ -83,7 +83,7 @@ nav:
         - Glossary: um/references/glossary.md
       - ACCESS Technical Details:
         - um/access-tech-info/index.md
-        - Access Model Configurations: um/access-tech-info/access-configs.md
+        - ACCESS Model Configurations: um/access-tech-info/access-configs.md
         - Ancillary Files: um/access-tech-info/ancillary-files.md
         - Scientific References: um/access-tech-info/sci-references.md
         - ACCESS Climate Suite Structure: um/access-tech-info/access-climate-suite-structure.md
