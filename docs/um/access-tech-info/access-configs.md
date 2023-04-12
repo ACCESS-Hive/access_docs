@@ -34,6 +34,7 @@ Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include:
    | Historical                     |               |
    | AMIP                           |               |
 
+(https://code.metoffice.gov.uk/rosie/u/search?s=access+cm2)
 -----------------------------
 
 ## ACCESS-ESM1.5
@@ -79,5 +80,5 @@ ACCESS-ESM1.5 suites for standard CMIP6 scenarios include:
 ### Vertical Resolution
 Comparison of the vertical resolution of 38 and 85 vertical levels used in the ACCESS-ESM1.5 (L38) and ACCESS-CM2 (L85) configurations, respectively. 
 
-![ALT_TEXT](cm2-vertical-levels.jpg)
+![Vertical_levels](./cm2-vertical-levels.jpg "Different vertical resolution: L38 versus L85")
 
