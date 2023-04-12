@@ -83,3 +83,6 @@ Comparison of the vertical resolution of 38 and 85 vertical levels used in the A
 
 ![Vertical_levels](cm2-vertical-levels.jpg "Different vertical resolution: L38 versus L85")
 
+### Suite Structure
+A flow chart describing the ACCESS-CM2 suite structure is shown below.
+![Suite_graph](suite-graph.jpg "ACCESS-CM2 Suite Structure graph")
