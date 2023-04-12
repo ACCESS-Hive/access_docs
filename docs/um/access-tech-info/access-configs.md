@@ -21,7 +21,6 @@ ACCESS-CM2 configuration:
     | Sea Ice       | CICE          | 5.1                   |
     | Coupler       | OASIS-MCT     | 3                     |
 
-
 ### Experiments
 
 ACCESS-CM2 suites for CMIP6 Scenarios are listed on the [CSIRO's CMIP6 archive](https://confluence.csiro.au/display/ACCESS/CMIP6+Archive+-+ACCESS-CM2). 
@@ -73,4 +72,12 @@ ACCESS-ESM1.5 suites for standard CMIP6 scenarios include:
 [Payu](https://payu.readthedocs.io/en/latest/) is a workflow management tool for running climate models in supercomputing environments. 
 
 -----------------------------
-### PMIP4		
+### PMIP4	
+
+-----------------------------
+## ACCESS Model Specifications
+### Vertical Resolution
+Comparison of the vertical resolution of 38 and 85 vertical levels used in the ACCESS-ESM1.5 (L38) and ACCESS-CM2 (L85) configurations, respectively. 
+
+![ALT_TEXT](cm2-vertical-levels.jpg)
+
