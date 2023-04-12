@@ -34,7 +34,8 @@ Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include:
    | Historical                     |               |
    | AMIP                           |               |
 
-(https://code.metoffice.gov.uk/rosie/u/search?s=access+cm2)
+Various CM2 suites can be searched using the [Rosie Suites Discovery](https://code.metoffice.gov.uk/rosie/u/search?s=access+cm2) tool, although you need to have a MOSR account to access this. 
+
 -----------------------------
 
 ## ACCESS-ESM1.5
