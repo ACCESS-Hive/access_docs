@@ -22,11 +22,13 @@ ACCESS-CM2 comprises:
     | Coupler       | OASIS-MCT     | 3                     |
 
 
-Experiments:
+**Experiments**
 
 ACCESS-CM2 suites for CMIP6 Scenarios are listed on the [CSIRO's CMIP6 archive](https://confluence.csiro.au/display/ACCESS/CMIP6+Archive+-+ACCESS-CM2). 
 
-Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: 
+- Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: 
+
+
 
    | EXPERIMENT                     | SUITE         |
    | ------------------------------ | ------------- |
@@ -53,8 +55,10 @@ ACCESS-ESM1.5 comprises:
     | Coupler       | OASIS-MCT     | 3                     |
 
 
-Experiments
+**Experiments**
+
 - Standard ACCESS-ESM1.5 CMIP6 Scenarios include:
+
 
     | Experiment   | Control | Link                                         |
     | ------------ | --------| -------------------------------------------- |
