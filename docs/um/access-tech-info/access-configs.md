@@ -3,7 +3,7 @@
 
 ## ACCESS-CM2
 
-ACCESS-CM2 comprises: 
+ACCESS-CM2 configuration: 
 
 - Atmosphere model (UM10.6): N96 resolution (1.875° x 1.25°, 85 levels). Physical model only – no carbon cycle.
 
@@ -22,23 +22,24 @@ ACCESS-CM2 comprises:
     | Coupler       | OASIS-MCT     | 3                     |
 
 
-**Experiments**
+### Experiments
 
 ACCESS-CM2 suites for CMIP6 Scenarios are listed on the [CSIRO's CMIP6 archive](https://confluence.csiro.au/display/ACCESS/CMIP6+Archive+-+ACCESS-CM2). 
 
-- Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: 
-
+Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: 
 
 
    | EXPERIMENT                     | SUITE         |
    | ------------------------------ | ------------- |
-   | Pre-industrial Control         | Br-565        |
-   |                                |               |
+   | Pre-industrial control         | br-565        |
+   | Historical                     |               |
+   | AMIP                           |               |
 
 -----------------------------
 
 ## ACCESS-ESM1.5
-ACCESS-ESM1.5 comprises:
+
+ACCESS-ESM1.5 configuration:
 
 - Atmosphere model (UM7.3): N96 resolution (1.875° x 1.25°, 38 levels). 
 
@@ -55,21 +56,21 @@ ACCESS-ESM1.5 comprises:
     | Coupler       | OASIS-MCT     | 3                     |
 
 
-**Experiments**
+### Experiments
 
-- Standard ACCESS-ESM1.5 CMIP6 Scenarios include:
+ACCESS-ESM1.5 suites for standard CMIP6 scenarios include:
 
+| Experiment   | Control | Link                                         |
+| ------------ | --------| -------------------------------------------- |
+| PIcontrol    | Payu    | ​https://github.com/coecms/esm-pre-industrial |
+| Abrupt4xCO2  |         |                                              |
+| 1pctCO2      |         |                                              |
+| Historical   | Payu    | ​https://github.com/coecms/esm-historical     |
+|AMIP         |         |                               |
 
-    | Experiment   | Control | Link                                         |
-    | ------------ | --------| -------------------------------------------- |
-    | PIcontrol    | Payu    | ​https://github.com/coecms/esm-pre-industrial |
-    | Abrupt4xCO2  |         |                                              |
-    | 1pctCO2      |         |                                              |
-    | Historical   | Payu    | ​https://github.com/coecms/esm-historical     |
-    | AMIP         |         |                               |
-
+ 
 
 [Payu](https://payu.readthedocs.io/en/latest/) is a workflow management tool for running climate models in supercomputing environments. 
 
-
-__PMIP4__		
+-----------------------------
+### PMIP4		
