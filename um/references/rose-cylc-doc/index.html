@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rose-and-cylc-documentation" class="md-skip">
+        <a href="#rosie-rose-and-cylc" class="md-skip">
           Skip to content
         </a>
       
@@ -1129,7 +1129,13 @@
   
 
 
-<h1 id="rose-and-cylc-documentation">Rose and Cylc Documentation</h1>
+<h1 id="rosie-rose-and-cylc">Rosie, Rose and Cylc</h1>
+<p>ACCESS-CM and ACCESS-ESM are a set of sub-models (e.g. UM, MOM, CICE, CABLE and OASIS) with a range of model parameters, input data, and computer related information, that need to be packaged together as a <em>suite</em> in order to run. Typically, an existing suite is copied and then edited as needed for a particular run. The suite resides in a directory created in the user’s accessdev <code>cylc-run</code> directory, e.g. <code>~/cylc-run/u-br565</code> (u-br565 is the ACCESS-CM2 preindustrial experiment release suite). </p>
+<p>Note that each suite directory is copied to Gadi when it is run with cylc, where the scripts are then sent to the PBS job queue. There are two ways to edit a suite:</p>
+<ol>
+<li>Use the Rose GUI</li>
+<li>Use a text/terminal editor (e.g. nano, emacs, etc.).</li>
+</ol>
 <h2 id="rose">Rose</h2>
 <p><a href="http://metomi.github.io/rose/doc/html/index.html">Rose documentation</a></p>
 <h2 id="cylc">Cylc</h2>
