@@ -79,7 +79,7 @@ nav:
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
         - Scientific Tools: um/references/scitools.md
-        - Cylc Documentation: um/references/rose-cylc-doc.md
+        - Rose, Cylc, Rosie: um/references/rose-cylc-doc.md
       - ACCESS Technical Details:
         - um/access-tech-info/index.md
         - ACCESS Model Configurations: um/access-tech-info/access-configs.md
