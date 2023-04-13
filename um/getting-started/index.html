@@ -470,6 +470,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#preparing-to-run-access-suites" class="md-nav__link">
+    Preparing to run ACCESS suites
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing to run ACCESS suites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-nci" class="md-nav__link">
+    Logging in to NCI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-gadi" class="md-nav__link">
+    Logging in to Gadi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1149,6 +1176,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#preparing-to-run-access-suites" class="md-nav__link">
+    Preparing to run ACCESS suites
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing to run ACCESS suites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-nci" class="md-nav__link">
+    Logging in to NCI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-gadi" class="md-nav__link">
+    Logging in to Gadi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1196,6 +1250,29 @@
 <h3 id="uk-met-office-environment-on-nci">UK Met Office Environment on NCI</h3>
 <p>Installation of the UK Met Office Environment on NCI comprises the cylc workflow system, rose suites, the Met Office MOSRS repository and our local replica repository as well the model software and tools.</p>
 <p>Here is more information on how to setup your account to use the <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+Environment+on+NCI">UK MetOffice Environment on NCI</a>.</p>
+<h2 id="preparing-to-run-access-suites">Preparing to run ACCESS suites</h2>
+<h3 id="logging-in-to-nci">Logging in to NCI</h3>
+<p>At this stage, you should be able to connect to accessdev and Gadi. </p>
+<p><a href="https://accessdev.nci.org.au">accessdev</a> is a frontend system where you prepare ACCESS jobs and then submit them to Gadi. </p>
+<p><a href="https://nci.org.au/our-systems/hpc-systems">Gadi</a> is the name of the supercomputer at NCI where ACCESS is run.  </p>
+<p>To log into accessdev: </p>
+<p><code>ssh -Y $USER@accessdev.nci.org.au</code></p>
+<p>The <code>–Y</code> switch is used to allow trusted X11 forwarding. </p>
+<p>You can now begin to work on setting up a model run, which is explained more in the <em>How-to Guides</em> and <em>Tutorials</em> sections. </p>
+<p>If required, enter UKMO password at the start of a session by typing <code>mosrs-auth</code>. It is needed for copying a suite and making any changes that affect the UM and its repository: </p>
+<p>To exit: <code>logout</code> or [ctrl-d] </p>
+<h3 id="logging-in-to-gadi">Logging in to Gadi</h3>
+<p>Logging into Gadi is similar to that for accessdev: </p>
+<p><code>ssh -Y $USER@gadi.nci.org.au</code></p>
+<p><em>Note:</em> Aliases and shortcuts can be created to simplify these commands by <a href="https://accessdev.nci.org.au/trac/wiki/Guides/SSH">configuring SSH</a>.</p>
+<p>Some useful NCI commands are: </p>
+<p><code>hostname</code> # displays login node details  </p>
+<p><code>module list</code>  # modules currently loaded for you</p>
+<p><code>module avail</code>  # available modules </p>
+<p><code>nci_account -P [proj]</code> # compute allocation details for [proj]</p>
+<p><code>nqstat -P [proj]</code> # jobs that are running/queued in [proj]  </p>
+<p><code>lquota</code>  # storage allocation and usage for all your projects </p>
+<p>To exit: the same as for accessdev. </p>
 
 
 
