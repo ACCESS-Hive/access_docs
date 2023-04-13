@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rosie-rose-and-cylc" class="md-skip">
+        <a href="#rose-cylc-and-rosie" class="md-skip">
           Skip to content
         </a>
       
@@ -845,6 +845,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rosie" class="md-nav__link">
+    Rosie
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1111,6 +1118,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rosie" class="md-nav__link">
+    Rosie
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1129,18 +1143,35 @@
   
 
 
-<h1 id="rosie-rose-and-cylc">Rosie, Rose and Cylc</h1>
+<h1 id="rose-cylc-and-rosie">Rose, Cylc and Rosie</h1>
 <p>ACCESS-CM and ACCESS-ESM are a set of sub-models (e.g. UM, MOM, CICE, CABLE and OASIS) with a range of model parameters, input data, and computer related information, that need to be packaged together as a <em>suite</em> in order to run. Typically, an existing suite is copied and then edited as needed for a particular run. The suite resides in a directory created in the user’s accessdev <code>cylc-run</code> directory, e.g. <code>~/cylc-run/u-br565</code> (u-br565 is the ACCESS-CM2 preindustrial experiment release suite). </p>
 <p>Note that each suite directory is copied to Gadi when it is run with cylc, where the scripts are then sent to the PBS job queue. There are two ways to edit a suite:</p>
 <ol>
 <li>Use the Rose GUI</li>
 <li>Use a text/terminal editor (e.g. nano, emacs, etc.).</li>
 </ol>
+<p>Rose and cylc are invariably used together in rose/cylc suites.</p>
 <h2 id="rose">Rose</h2>
-<p><a href="http://metomi.github.io/rose/doc/html/index.html">Rose documentation</a></p>
+<p><a href="http://metomi.github.io/rose/doc/html/index.html">Rose</a> is a toolkit for writing, editing and running application configurations. Effectively a configuration editor, Rose starts a GUI to edit a rose suite, which is run from your suite directory on accessdev as follows: </p>
+<p><code>cd ~/roses/u-[suite]</code></p>
+<p><code>rose edit &amp;</code> </p>
+<p>This creates a dialog box similar to the one shown below, where the <code>&amp;</code> is optional (it keeps the terminal prompt active and runs the GUI as a separate process). </p>
+<p><img alt="Rose_edit_gui" src="../rose-config-gui.jpg" title="Rose Edit GUI" /></p>
+<p>Alternatively, the following files can be edited directly using a text editor: </p>
+<p><code>~/roses/u-[suite]/rose-suite.conf</code></p>
+<p><code>~/roses/u-[suite]/rose-suite.info</code></p>
+<p><code>~/roses/u-[suite]/suite.rc</code></p>
 <h2 id="cylc">Cylc</h2>
-<p><a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html">Cylc documentation</a></p>
-<p>At NCI, they are currently using cylc 7. Although cylc 8 has recently been released, it is awiting proper installation at NCI. </p>
+<p>Pronounced ‘silk’, <a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html">cylc</a> is a workflow engine that automatically executes tasks according to schedules and dependencies. Effectively a job scheduler, cylc deals with specifications for how the job will be run and the time steps of each sub-model.</p>
+<p>Cylc also provides important capabilities for monitoring jobs, particularly for dealing with jobs that have failed during processing but can be restarted from a previous timestep (rather than starting all over again).</p>
+<p>At NCI, the current version cylc 7 will be soon replaced by cylc 8. </p>
+<h2 id="rosie">Rosie</h2>
+<p><a href="http://metomi.github.io/rose/doc/html/tutorial/rose/rosie.html">Rosie</a> is a script with a set of high level options to work with rose, handling suite storage and discovery. Common commands include: </p>
+<p><code>rosie copy u-[suite]</code> # copy an existing suite (a new suite name is assigned) </p>
+<p><code>rosie checkout u-[suite]</code> # create a local copy of an existing suite </p>
+<p><code>rosie go</code>   # suite management </p>
+<p><code>rosie create</code>   # create a new suite </p>
+<p>When a new suite is created, a new name is generated within the repository system. This is populated with some descriptive information about the suite along with all the initial configuration details, much of which is automatically generated. </p>
 
 
 
