@@ -85,4 +85,4 @@ Comparison of the vertical resolution of 38 and 85 vertical levels used in the A
 
 ### Suite Structure
 A flow chart describing the ACCESS-CM2 suite structure is shown below.
-![Suite_graph](suite-graph.jpg "ACCESS-CM2 Suite Structure graph")
+![Suite_graph](cm2-suite-graph.jpg "ACCESS-CM2 Suite Structure graph")
