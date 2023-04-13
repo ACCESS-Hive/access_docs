@@ -1,6 +1,6 @@
 # ACCESS Climate Suite Structure
 
-## Met Office Releases:
+## Met Office Releases
 ### UM Updates 
 
 #### Installing new UM versions on Gadi
