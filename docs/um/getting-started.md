@@ -36,4 +36,46 @@ Installation of the UK Met Office Environment on NCI comprises the cylc workflow
 Here is more information on how to setup your account to use the [UK MetOffice Environment on NCI](https://opus.nci.org.au/display/DAE/UK+Met+Office+Environment+on+NCI).
  
 
+## Preparing to run ACCESS suites
 
+### Logging in to NCI 
+At this stage, you should be able to connect to accessdev and Gadi. 
+
+[accessdev](https://accessdev.nci.org.au) is a frontend system where you prepare ACCESS jobs and then submit them to Gadi. 
+
+[Gadi](https://nci.org.au/our-systems/hpc-systems) is the name of the supercomputer at NCI where ACCESS is run.  
+
+To log into accessdev: 
+
+`ssh -Y $USER@accessdev.nci.org.au`
+
+The `–Y` switch is used to allow trusted X11 forwarding. 
+
+You can now begin to work on setting up a model run, which is explained more in the *How-to Guides* and *Tutorials* sections. 
+
+If required, enter UKMO password at the start of a session by typing `mosrs-auth`. It is needed for copying a suite and making any changes that affect the UM and its repository: 
+
+To exit: `logout` or [ctrl-d] 
+
+### Logging in to Gadi  
+Logging into Gadi is similar to that for accessdev: 
+
+`ssh -Y $USER@gadi.nci.org.au`
+
+*Note:* Aliases and shortcuts can be created to simplify these commands by [configuring SSH](https://accessdev.nci.org.au/trac/wiki/Guides/SSH).
+
+ Some useful NCI commands are: 
+ 
+ `hostname` # displays login node details  
+
+ `module list`  # modules currently loaded for you
+
+ `module avail`  # available modules 
+
+`nci_account -P [proj]` # compute allocation details for [proj]
+
+`nqstat -P [proj]` # jobs that are running/queued in [proj]  
+
+`lquota`  # storage allocation and usage for all your projects 
+
+ To exit: the same as for accessdev. 
