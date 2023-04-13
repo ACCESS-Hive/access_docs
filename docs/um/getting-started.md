@@ -1,7 +1,6 @@
 # Getting Started with ACCESS suites
 
 This section outlines some key user requirements before getting started with running ACCESS suites, tutorials, etc.
-(e.g. NCI and MOSRS accounts, ssh and ssh keys, software setup, etc.)
 
 ## Requirements for running ACCESS suites 
 
@@ -22,18 +21,19 @@ To run an ACCESS suite, you will need to do the following:
 [Met Office Science Repository Service (MOSRS)](https://code.metoffice.gov.uk) is a Trac server run by the UK Met Office for sharing code and configurations for the climate models it runs with partners. It contains the source code and configurations for the Unified Model and JULES amongst other things.
 
 To apply for a MOSRS account, users should contact their local institutional sponsor. These are:
+
 - CSIRO: Martin Dix
 - CLEX and Universities: Holger Wolff
 - Bureau of Meteorology: David Lee
 
-Members of CLEX can request an account on MOSRS by emailing the helpdesk at cws_help@nci.org.au. 
+Members of CLEX can also email the helpdesk at cws_help@nci.org.au to request a MOSRS account.
 
-*Note:* Additional steps may be required to obtain access to the Met Office sharepoint and Yammer.
+*Note:* Additional steps are required to obtain access to the Met Office sharepoint and Yammer.
 
 ### UK Met Office Environment on NCI
 Installation of the UK Met Office Environment on NCI comprises the cylc workflow system, rose suites, the Met Office MOSRS repository and our local replica repository as well the model software and tools.
 
-Here is more information on how to setup your account to use the [UK MetOffice Environment on NCI](https://opus.nci.org.au/display/DAE/UK+Met+Office+Environment+on+NCI) page.
+Here is more information on how to setup your account to use the [UK MetOffice Environment on NCI](https://opus.nci.org.au/display/DAE/UK+Met+Office+Environment+on+NCI).
  
 
 
