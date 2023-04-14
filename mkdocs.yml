@@ -60,11 +60,14 @@ nav:
       - um/index.md
       - Getting Started: um/getting-started.md
       - ACCESS Model Configurations:
-      - um/access-model-configs/index.md
+        - um/access-model-configs/index.md
+        - ACCESS-CM2: um/access-model-configs/access-cm2.md
+        - ACCESS-ESM1.5: um/access-model-configs/access-esm1_5.md
+        - Model Specifications: um/access-model-configs/access-model-specs.md
       - Tutorials:
         - um/tutorials/index.md
         - Running a Standard Suite: um/tutorials/run-suite-tut.md
-        - Running a Regional Suite : um/tutorials/regional-suite-tut.md
+        - Running a Regional Suite: um/tutorials/regional-suite-tut.md
         - Running a Climate Suite: um/tutorials/climate-suite-tut.md
       - How-to Guides:
         - um/how-to/index.md
