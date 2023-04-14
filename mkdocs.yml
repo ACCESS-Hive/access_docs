@@ -59,11 +59,11 @@ nav:
   - ACCESS models:
       - um/index.md
       - Getting Started: um/getting-started.md
-      - ACCESS Model Configurations:
-        - um/access-model-configs/index.md
-        - ACCESS-CM2: um/access-model-configs/access-cm2.md
-        - ACCESS-ESM1.5: um/access-model-configs/access-esm1_5.md
-        - Model Specifications: um/access-model-configs/access-model-specs.md
+      - Model Configurations:
+        - um/model-configs/index.md
+        - ACCESS-CM2: um/model-configs/access-cm2.md
+        - ACCESS-ESM1.5: um/model-configs/access-esm1_5.md
+        - Model Specifications: um/model-configs/access-model-specs.md
       - Tutorials:
         - um/tutorials/index.md
         - Running a Standard Suite: um/tutorials/run-suite-tut.md
