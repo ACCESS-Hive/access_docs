@@ -56,14 +56,11 @@ nav:
   - Welcome:
     - index.md
     - License: LICENSE.md
-  - UM and UM related:
+  - ACCESS models:
       - um/index.md
       - Getting Started: um/getting-started.md
-      - UM Partnership Resources:
-        - um/um-partner-resources/index.md
-        - RMED: um/um-partner-resources/rmed.md
-        - GMED: um/um-partner-resources/gmed.md
-        - LFRic: um/um-partner-resources/lfric.md
+      - ACCESS Model Configurations:
+      - um/access-model-configs/index.md
       - Tutorials:
         - um/tutorials/index.md
         - Running a Standard Suite: um/tutorials/run-suite-tut.md
@@ -89,5 +86,10 @@ nav:
         - Model Input and Forcing: um/access-tech-info/model-input-and-forcing.md
         - Installing new UM and JULES releases: um/access-tech-info/install-um-release.md
         - UM and JULES rose-stem testing: um/access-tech-info/rose-stem.md
+      - UM Partnership Resources:
+        - um/um-partner-resources/index.md
+        - RMED: um/um-partner-resources/rmed.md
+        - GMED: um/um-partner-resources/gmed.md
+        - LFRic: um/um-partner-resources/lfric.md
       - Glossary: 
         - um/glossary/index.md
