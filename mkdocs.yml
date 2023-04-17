@@ -75,7 +75,7 @@ nav:
         - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
         - Modify Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
         - Troubleshooting: um/how-to/how-to-troubleshoot.md
-      - References:
+      - UM and UM-Related:
         - um/references/index.md
         - UM Documentation: um/references/um-documentation.md
         - Scientific Tools: um/references/scitools.md

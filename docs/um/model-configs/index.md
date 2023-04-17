@@ -4,4 +4,4 @@ ACCESS Model Configurations combine separate domain-specific model components (e
 
 The coupler is a software that allows synchronized exchanges of coupling information between numerical codes that represent different components of the climate system.
 
-Depending on the needs of a specific application, different ACCESS model configurations may use a subset of the core component models for atmosphere-only or ocean-only simulations or may replace specific component models.
+Depending on the needs of a specific application, different ACCESS model configurations may use a subset of the core component models for atmosphere-only or ocean-only simulations or may replace specific component models entirely.
