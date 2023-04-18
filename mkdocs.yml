@@ -56,42 +56,47 @@ nav:
   - Welcome:
     - index.md
     - License: LICENSE.md
+  - ACCESS-CM2: 
+      - access_cm2/index.md
+  - ACCESS-ESM1.5: 
+      - access_esm1_5/index.md
+  - ACCESS-OM2:
+      - access_om2/index.md
   - ACCESS models:
-      - um/index.md
+      - access_models/index.md
       - Model Configurations:
-        - um/model-configs/index.md
-        - ACCESS-CM2: um/model-configs/access-cm2.md
-        - ACCESS-ESM1.5: um/model-configs/access-esm1_5.md
-        - Model Specifications: um/model-configs/access-model-specs.md
-      - Getting Started: um/getting-started.md
+        - access_models/model-configs/index.md
+        - Model Specifications: access_models/model-configs/access-model-specs.md
+      - Getting Started: access_models/getting-started.md
       - Tutorials:
-        - um/tutorials/index.md
-        - Running a Standard Suite: um/tutorials/run-suite-tut.md
-        - Running a Regional Suite: um/tutorials/regional-suite-tut.md
-        - Running a Climate Suite: um/tutorials/climate-suite-tut.md
+        - access_models/tutorials/index.md
+        - Running a Standard Suite: access_models/tutorials/run-suite-tut.md
+        - Running a Regional Suite: access_models/tutorials/regional-suite-tut.md
+        - Running a Climate Suite: access_models/tutorials/climate-suite-tut.md
       - How-to Guides:
-        - um/how-to/index.md
-        - Change Time Frame: um/how-to/how-to-change-time-frame.md
-        - Add New Diagnostics: um/how-to/how-to-add-new-diagnostics.md
-        - Modify Ancillary Files: um/how-to/how-to-modify-ancillary-files.md
-        - Troubleshooting: um/how-to/how-to-troubleshoot.md
+        - access_models/how-to/index.md
+        - Change Time Frame: access_models/how-to/how-to-change-time-frame.md
+        - Add New Diagnostics: access_models/how-to/how-to-add-new-diagnostics.md
+        - Modify Ancillary Files: access_models/how-to/how-to-modify-ancillary-files.md
+        - Troubleshooting: access_models/how-to/how-to-troubleshoot.md
       - UM and UM-Related:
-        - um/references/index.md
-        - UM Documentation: um/references/um-documentation.md
-        - Scientific Tools: um/references/scitools.md
-        - Rose, Cylc, Rosie: um/references/rose-cylc-doc.md
+        - access_models/references/index.md
+        - UM Documentation: access_models/references/um-documentation.md
+        - Scientific Tools: access_models/references/scitools.md
+        - Rose, Cylc, Rosie: access_models/references/rose-cylc-doc.md
       - ACCESS Technical Details:
-        - um/access-tech-info/index.md
-        - Ancillary Files: um/access-tech-info/ancillary-files.md
-        - Scientific References: um/access-tech-info/sci-references.md
-        - Climate Suite Structure: um/access-tech-info/climate-suite-structure.md
-        - Model Input and Forcing: um/access-tech-info/model-input-and-forcing.md
-        - Installing new UM and JULES releases: um/access-tech-info/install-um-release.md
-        - UM and JULES rose-stem testing: um/access-tech-info/rose-stem.md
+        - access_models/access-tech-info/index.md
+        - Ancillary Files: access_models/access-tech-info/ancillary-files.md
+        - Scientific References: access_models/access-tech-info/sci-references.md
+        - Climate Suite Structure: access_models/access-tech-info/climate-suite-structure.md
+        - Model Input and Forcing: access_models/access-tech-info/model-input-and-forcing.md
+        - Installing new UM and JULES releases: access_models/access-tech-info/install-um-release.md
+        - UM and JULES rose-stem testing: access_models/access-tech-info/rose-stem.md
       - UM Partnership Resources:
-        - um/um-partner-resources/index.md
-        - RMED: um/um-partner-resources/rmed.md
-        - GMED: um/um-partner-resources/gmed.md
-        - LFRic: um/um-partner-resources/lfric.md
+        - access_models/um-partner-resources/index.md
+        - RMED: access_models/um-partner-resources/rmed.md
+        - GMED: access_models/um-partner-resources/gmed.md
+        - LFRic: access_models/um-partner-resources/lfric.md
       - Glossary: 
-        - um/glossary/index.md
+        - access_models/glossary/index.md
+
