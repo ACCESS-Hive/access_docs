@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../LICENSE/">
       
       
-        <link rel="next" href="../access_cm2/">
+        <link rel="next" href="../access_esm1_5/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>License - ACCESS Community Documentation</title>
+        <title>ACCESS-CM2 - ACCESS Community Documentation</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#access-cm2" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              License
+              ACCESS-CM2
             
           </span>
         </div>
@@ -188,15 +193,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href=".." class="md-tabs__link">
         Welcome
       </a>
     </li>
@@ -206,13 +209,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../access_cm2/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         ACCESS-CM2
       </a>
     </li>
@@ -322,16 +327,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
       
       
         
@@ -354,7 +357,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Welcome
@@ -367,19 +370,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LICENSE/" class="md-nav__link">
         License
       </a>
-      
     </li>
   
 
@@ -397,14 +392,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -416,12 +413,12 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../access_cm2/">ACCESS-CM2</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">ACCESS-CM2</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           ACCESS-CM2
@@ -1274,6 +1271,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-cm2-configuration" class="md-nav__link">
+    ACCESS-CM2 configuration:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1291,43 +1312,84 @@
   
 
 
-  <h1>License</h1>
-
-<p>All documentation material from the ACCESS-NRI is
-made available under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution
-license</a>. The following is a human-readable summary of
-(and not a substitute for) the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">full legal text of the CC BY 4.0
-license</a>.</p>
-<p>You are free:</p>
+<h1 id="access-cm2">ACCESS-CM2</h1>
+<h2 id="access-cm2-configuration">ACCESS-CM2 configuration:</h2>
 <ul>
-<li>to <strong>Share</strong>---copy and redistribute the material in any medium or format</li>
-<li>to <strong>Adapt</strong>---remix, transform, and build upon the material</li>
+<li>
+<p>Atmosphere model (UM10.6): N96 resolution (1.875° x 1.25°, 85 levels). Physical model only – no carbon cycle.</p>
+</li>
+<li>
+<p>Land surface model (CABLE2.5) </p>
+</li>
+<li>
+<p>Ocean model (MOM5): Tripolar grid, 1° resolution, 50 levels.</p>
+</li>
+<li>
+<p>Sea ice model (CICE5.1) </p>
+<table>
+<thead>
+<tr>
+<th>COMPONENT</th>
+<th>MODEL</th>
+<th>VERSION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atmosphere</td>
+<td>UM</td>
+<td>10.6</td>
+</tr>
+<tr>
+<td>Land Surface</td>
+<td>CABLE</td>
+<td>2.5 (integrated in UM)</td>
+</tr>
+<tr>
+<td>Ocean</td>
+<td>MOM</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Sea Ice</td>
+<td>CICE</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td>Coupler</td>
+<td>OASIS-MCT</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-<p>for any purpose, even commercially.</p>
-<p>The licensor cannot revoke these freedoms as long as you follow the
-license terms.</p>
-<p>Under the following terms:</p>
-<ul>
-<li><strong>Attribution</strong>---You must give appropriate credit (mentioning that
-  your work is derived from work that is <em>Copyright © ACCESS-NRI</em> and, where practical, linking to
-  <em><a href="https://www.access-nri.org.au">https://www.access-nri.org.au</a></em>, provide a <a href="https://creativecommons.org/licenses/by/4.0/">link to the
-  license</a>, and indicate if changes were made. You may do
-  so in any reasonable manner, but not in any way that suggests the
-  licensor endorses you or your use.</li>
-</ul>
-<p><strong>No additional restrictions</strong>---You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.  With the understanding that:</p>
-<p>Notices:</p>
-<ul>
-<li>You do not have to comply with the license for elements of the
-  material in the public domain or where your use is permitted by an
-  applicable exception or limitation.</li>
-<li>No warranties are given. The license may not give you all of the
-  permissions necessary for your intended use. For example, other
-  rights such as publicity, privacy, or moral rights may limit how you
-  use the material.</li>
-</ul>
+<h2 id="experiments">Experiments</h2>
+<p>ACCESS-CM2 suites for CMIP6 Scenarios are listed on the <a href="https://confluence.csiro.au/display/ACCESS/CMIP6+Archive+-+ACCESS-CM2">CSIRO's CMIP6 archive</a>. </p>
+<p>Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: </p>
+<table>
+<thead>
+<tr>
+<th>EXPERIMENT</th>
+<th>SUITE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pre-industrial control</td>
+<td>br-565</td>
+</tr>
+<tr>
+<td>Historical</td>
+<td></td>
+</tr>
+<tr>
+<td>AMIP</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Various CM2 suites can be searched using the <a href="https://code.metoffice.gov.uk/rosie/u/search?s=access+cm2">Rosie Suites Discovery</a> tool, although you need to have a MOSR account to access this. </p>
 
 
 
