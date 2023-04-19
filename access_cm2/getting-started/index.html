@@ -473,11 +473,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements-for-running-access-suites" class="md-nav__link">
-    Requirements for running ACCESS suites
+  <a href="#requirements-for-running-access-cm-suites" class="md-nav__link">
+    Requirements for running ACCESS-CM suites
   </a>
   
-    <nav class="md-nav" aria-label="Requirements for running ACCESS suites">
+    <nav class="md-nav" aria-label="Requirements for running ACCESS-CM suites">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -497,6 +497,33 @@
           <li class="md-nav__item">
   <a href="#met-office-science-repository-service-mosrs" class="md-nav__link">
     Met Office Science Repository Service (MOSRS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparationing-to-run-an-access-cm-suite" class="md-nav__link">
+    Preparationing to run an ACCESS-CM suite
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparationing to run an ACCESS-CM suite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-gadi-and-accessdev" class="md-nav__link">
+    Logging in to Gadi and accessdev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-nci-commands" class="md-nav__link">
+    Useful NCI commands
   </a>
   
 </li>
@@ -1369,11 +1396,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements-for-running-access-suites" class="md-nav__link">
-    Requirements for running ACCESS suites
+  <a href="#requirements-for-running-access-cm-suites" class="md-nav__link">
+    Requirements for running ACCESS-CM suites
   </a>
   
-    <nav class="md-nav" aria-label="Requirements for running ACCESS suites">
+    <nav class="md-nav" aria-label="Requirements for running ACCESS-CM suites">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1402,6 +1429,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#preparationing-to-run-an-access-cm-suite" class="md-nav__link">
+    Preparationing to run an ACCESS-CM suite
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparationing to run an ACCESS-CM suite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-in-to-gadi-and-accessdev" class="md-nav__link">
+    Logging in to Gadi and accessdev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-nci-commands" class="md-nav__link">
+    Useful NCI commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1421,27 +1475,75 @@
 
 
 <h1 id="getting-started-with-access-cm">Getting Started with ACCESS-CM</h1>
-<p>This section outlines some key user requirements before getting started with running ACCESS-CM suites.</p>
-<h2 id="requirements-for-running-access-suites">Requirements for running ACCESS suites</h2>
-<ul>
-<li>An institutional email address with an organisation that allows access to NCI (e.g., CSIRO, a university, etc.).</li>
-<li>Access to NCI compute/storage.</li>
-<li>A computer with an internet connection and a command line terminal with a Linux/Mac/Unix computer (e.g., MacOS with XQuartz and command line tools installed) or Putty Cygwin or similar X-Windows compatible program on a PC. </li>
-</ul>
+<p>This section outlines some key user requirements and preparations before getting started with running ACCESS-CM suites.</p>
+<p>To proceed further, you will need to have:
+- An institutional email address with an organisation that allows access to NCI (e.g., CSIRO, a university, etc.).
+- Access to NCI compute/storage.
+- A Linux/Mac/Unix computer with an internet connection and a command line terminal (e.g., MacOS with XQuartz and command line tools installed, or Putty Cygwin/MobaXterm/similar X-Windows compatible program on a PC). </p>
+<h2 id="requirements-for-running-access-cm-suites">Requirements for running ACCESS-CM suites</h2>
 <h3 id="basic-setup">Basic Setup</h3>
-<p>To run an ACCESS suite, all new users will need to:</p>
+<p>To run an ACCESS-CM suite, new users will need to:</p>
 <ul>
 <li><a href="https://opus.nci.org.au/display/Help/How+to+create+an+NCI+user+account">Create an NCI account</a> through the NCI online self-service portal.</li>
 <li><a href="https://my.nci.org.au/mancini/project/access/join">Join the ACCESS group</a>. You can also find instructions on how to <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project">join a particular project</a> through the NCI self-service portal. </li>
-<li><a href="https://accessdev.nci.org.au/trac/wiki/GettingConnected">Connect to accessdev</a> to complete your setup (once you have your NCI credentials and are a member of the ACCESS group). 
+<li><a href="https://accessdev.nci.org.au/trac/wiki/GettingConnected">Connect to accessdev</a> to complete your setup once you have your NCI credentials and are a member of the ACCESS group. 
 <em>Note:</em> At present, both accessdev and <a href="https://opus.nci.org.au/display/Help/ARE+User+Guide">ARE</a> run the models on Gadi. However, ARE only supports shorter-running suites (i.e., runs less than 48 hours). Work is currently in progress to fully transition the cylc workflows from accessdev virtual machine to the ARE.</li>
-<li>Additional steps relating to the <a href="https://accessdev.nci.org.au/trac/wiki/gadi">communication between accessdev and Gadi</a> may also be necessary. </li>
+<li>Additional steps relating to the <a href="https://accessdev.nci.org.au/trac/wiki/gadi">communication between accessdev and Gadi</a> may also be necessary.</li>
 </ul>
 <h3 id="uk-met-office-environment-on-nci">UK Met Office Environment on NCI</h3>
 <p>As components within the ACCESS-CM suites use the UK Met Office model code, the <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+Environment+on+NCI">UK Met Office Environment</a> is installed on NCI. This comprises the model software and tools as well as the cylc workflow system, rose suites, the Met Office MOSRS repository and our local replica repository. In order to checkout and run ACCESS-CM2 suites on Gadi using Rose/Cylc, you need to have access to a number of repositories at the Met Office as well as the local replica and local software on NCI, which will require fullfilling these <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+environment+prerequisites">prerequisites</a>.</p>
 <h3 id="met-office-science-repository-service-mosrs">Met Office Science Repository Service (MOSRS)</h3>
 <p><a href="https://code.metoffice.gov.uk">Met Office Science Repository Service (MOSRS)</a> is a Trac server run by the UK Met Office for sharing code and configurations for the climate models it runs with partners. It contains the source code and configurations for the UM and JULES amongst other things.</p>
-<p>To apply for a MOSRS account, users should contact their <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+environment+prerequisites">local institutional sponsor</a>.</p>
+<p>To apply for a MOSRS account, you should contact your <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+environment+prerequisites">local institutional sponsor</a>.</p>
+<hr />
+<h2 id="preparationing-to-run-an-access-cm-suite">Preparationing to run an ACCESS-CM suite</h2>
+<p>At this stage, you should be able to connect to accessdev and Gadi. </p>
+<p><a href="https://accessdev.nci.org.au">accessdev</a> is a frontend system where you prepare ACCESS jobs and then submit them to <a href="https://nci.org.au/our-systems/hpc-systems">Gadi</a> (the supercomputer at NCI where ACCESS is run).  </p>
+<h3 id="logging-in-to-gadi-and-accessdev">Logging in to Gadi and accessdev</h3>
+<p>To run an ACCESS-CM2 suite (i.e., job), you need to first <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-LoggingIn&amp;LoginNodes">login to Gadi</a> with your <code>username</code> through a login node. </p>
+<p><code>ssh -Y username@gadi.nci.org.au</code></p>
+<p>Similarly, to login to accessdev: </p>
+<p><code>ssh -Y $USER@accessdev.nci.org.au</code></p>
+<p>The <code>–Y</code> switch is used to allow trusted X11 forwarding. Aliases and shortcuts can be created to simplify these commands by <a href="https://accessdev.nci.org.au/trac/wiki/Guides/SSH">configuring SSH</a>.</p>
+<h3 id="useful-nci-commands">Useful NCI commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>logout</code> or <code>[ctrl-d]</code></td>
+<td>To exit a session</td>
+</tr>
+<tr>
+<td><code>hostname</code></td>
+<td>Displays login node details</td>
+</tr>
+<tr>
+<td><code>module list</code></td>
+<td>Modules currently loaded</td>
+</tr>
+<tr>
+<td><code>module avail</code></td>
+<td>Available modules</td>
+</tr>
+<tr>
+<td><code>nci_account -P [proj]</code></td>
+<td>Compute allocation for [proj]</td>
+</tr>
+<tr>
+<td><code>nqstat -P [proj]</code></td>
+<td>Jobs running/queued in [proj]</td>
+</tr>
+<tr>
+<td><code>lquota</code></td>
+<td>Storage allocation and usage for all your projects</td>
+</tr>
+</tbody>
+</table>
 
 
 
