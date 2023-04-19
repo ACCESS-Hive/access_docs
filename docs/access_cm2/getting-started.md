@@ -52,8 +52,8 @@ The `–Y` switch is used to allow trusted X11 forwarding. Aliases and shortcuts
 | `hostname`             | Displays login node details|
 | `module list`          | Modules currently loaded   |
 | `module avail`         | Available modules          |
-| `nci_account -P [proj]`| Compute allocation for [proj]          |
-| `nqstat -P [proj]`     | Jobs running/queued in [proj]                   |
+| `nci_account -P [proj]`| Compute allocation for [proj]|
+| `nqstat -P [proj]`     | Jobs running/queued in [proj]|
 | `lquota`               | Storage allocation and usage for all your projects|
 
  
