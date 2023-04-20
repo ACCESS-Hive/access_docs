@@ -71,12 +71,6 @@ Each user has a project-independent [`$HOME`](https://opus.nci.org.au/display/He
 Through project membership, the user gets access to the storage space within the
 [project folders](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-ProjectFolderonLustreFilesystems/scratchand/g/data) `/scratch` and  `/g/data` filesystems for that particular project.
 
-
----- up to here! ----
-All Gadi jobs by default have 100MB of storage space allocated on the hosting compute node(s). The path to the storage space is set in the environment variable PBS_JOBFS in the job shell.
-
-For more information on  storage space allocations, refer to the [Job Folder $PBS_JOBFS](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-JobFolder$PBS_JOBFS) section on NCI.
-
 ### PBS Jobs
 To run compute tasks such as an ACCESS-CM suite on Gadi, users need to submit them as *jobs* to *queues*. Within a [job submission](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-JobSubmission), you can specify the queue, duration and computational resources needed for your job. When a job submission is accepted, it is assigned a jobID (shown in the return message) that can then be used to monitor the job’s [status](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-QueueStatus). 
 
