@@ -571,6 +571,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1556,6 +1563,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1576,10 +1590,12 @@
 
 <h1 id="getting-started-with-access-cm">Getting Started with ACCESS-CM</h1>
 <p>This section outlines some key user requirements and preparations before getting started with running ACCESS-CM suites.</p>
-<p>To proceed further, you will need to have:
-- An institutional email address with an organisation that allows access to NCI (e.g., CSIRO, a university, etc.).
-- Access to NCI compute/storage.
-- A Linux/Mac/Unix computer with an internet connection and a command line terminal (e.g., MacOS with XQuartz and command line tools installed, or Putty Cygwin/MobaXterm/similar X-Windows compatible program on a PC). </p>
+<p>To proceed further, you will need to have:</p>
+<ul>
+<li>An institutional email address with an organisation that allows access to NCI (e.g., CSIRO, a university, etc.).</li>
+<li>Access to NCI compute/storage.</li>
+<li>A Linux/Mac/Unix computer with an internet connection and a command line terminal (e.g., MacOS with XQuartz and command line tools installed, or Putty Cygwin/MobaXterm/similar X-Windows compatible program on a PC). </li>
+</ul>
 <h2 id="requirements-for-running-access-cm-suites">Requirements for running ACCESS-CM suites</h2>
 <h3 id="basic-setup">Basic Setup</h3>
 <p>To run an ACCESS-CM suite, new users will need to:</p>
@@ -1657,6 +1673,13 @@
 <h3 id="pbs-jobs">PBS Jobs</h3>
 <p>To run compute tasks such as an ACCESS-CM suite on Gadi, users need to submit them as <em>jobs</em> to <em>queues</em>. Within a <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-JobSubmission">job submission</a>, you can specify the queue, duration and computational resources needed for your job. When a job submission is accepted, it is assigned a jobID (shown in the return message) that can then be used to monitor the job’s <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-QueueStatus">status</a>. </p>
 <p>On job completion, contents of the job’s standard output/error stream gets copied to a file in the working directory with the respective format: <code>&lt;jobname&gt;.o&lt;jobid&gt;</code> and <code>&lt;jobname&gt;.e&lt;jobid&gt;</code>. Users should check these two log files before proceeding with post-processing of any output from their corresponding job.</p>
+<hr />
+<h2 id="references">References</h2>
+<p><a id="1">[1]</a> 
+Bodman, R. and Mackallah, C. and Dobrohotoff, P. (2020). 
+Getting Started with ACCESS-CM2, 1-21.
+https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf</p>
+<p>[@Bodman2020]</p>
 
 
 
