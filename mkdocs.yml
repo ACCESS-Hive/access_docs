@@ -41,8 +41,6 @@ extra_css:
   - css/fontello.css
 
 plugins:
-  - search
-  - macros
   - bibtex:
       bib_file: "references.bib"
 
