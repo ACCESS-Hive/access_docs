@@ -56,4 +56,29 @@ The `–Y` switch is used to allow trusted X11 forwarding. Aliases and shortcuts
 | `nqstat -P [proj]`     | Jobs running/queued in [proj]|
 | `lquota`               | Storage allocation and usage for all your projects|
 
- 
+--------------------------------------------
+
+## Gadi Resources
+Gadi resources such as compute, storage and PBS jobs are briefly described below. For more detail about these [Gadi resources](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-GadiResources) can be found on the NCI website. 
+
+### Compute Hours
+Compute allocations are granted to projects instead of directly to users and, hence, you need to be a member of a project in order to use its compute allocation. To run jobs on Gadi, you need to have sufficient allocated [compute hours](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-ComputeHours) available, where the [job cost](https://opus.nci.org.au/display/Help/2.+Compute+Grant+and+Job+Debiting)
+depends on the resources reserved for the job and the amount of walltime it uses. 
+
+### Storage 
+Each user has a project-independent [`$HOME`](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-TheHomeFolder$HOME) directory, which has a storage limit of 10 GiB. All data on /home is backed up.
+
+Through project membership, the user gets access to the storage space within the
+[project folders](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-ProjectFolderonLustreFilesystems/scratchand/g/data) `/scratch` and  `/g/data` filesystems for that particular project.
+
+
+---- up to here! ----
+All Gadi jobs by default have 100MB of storage space allocated on the hosting compute node(s). The path to the storage space is set in the environment variable PBS_JOBFS in the job shell.
+
+For more information on  storage space allocations, refer to the [Job Folder $PBS_JOBFS](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-JobFolder$PBS_JOBFS) section on NCI.
+
+### PBS Jobs
+To run compute tasks such as an ACCESS-CM suite on Gadi, users need to submit them as *jobs* to *queues*. Within a [job submission](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-JobSubmission), you can specify the queue, duration and computational resources needed for your job. When a job submission is accepted, it is assigned a jobID (shown in the return message) that can then be used to monitor the job’s [status](https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-QueueStatus). 
+
+On job completion, contents of the job’s standard output/error stream gets copied to a file in the working directory with the respective format: `<jobname>.o<jobid>` and `<jobname>.e<jobid>`. Users should check these two log files before proceeding with post-processing of any output from their corresponding job.
+
