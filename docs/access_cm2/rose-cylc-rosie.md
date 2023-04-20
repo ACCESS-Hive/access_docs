@@ -54,7 +54,7 @@ The suite directory usually contains 2 subdirectories and 3 files:
 (TO DO add gif of command)
 </div>
 
-<img src="/Users/davide/access-nri/access_docs/docs/access_cm2/assets/mosrs-auth_command.gif" alt="mosrs-auth command" />
+<img src="assets/mosrs-auth_command.gif" alt="mosrs-auth command" />
 
 ## Copying ACCESS-CM2 suites with Rosie
 
