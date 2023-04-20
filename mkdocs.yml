@@ -41,9 +41,6 @@ extra_css:
   - css/fontello.css
 
 plugins:
-  - git-revision-date-localized:
-      type: date
-      enable_creation_date: true
   - search
   - macros
   - bibtex:
