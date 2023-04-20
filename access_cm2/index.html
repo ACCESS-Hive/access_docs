@@ -19,7 +19,7 @@
     
     
       
-        <title>ACCESS-CM2 - ACCESS Community Documentation</title>
+        <title>**ACCESS-CM2** - ACCESS Community Documentation</title>
       
     
     
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ACCESS-CM2
+              **<span style="color:orange">ACCESS-CM2</span>**
             
           </span>
         </div>
@@ -411,6 +411,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -441,6 +445,34 @@
     <li class="md-nav__item">
       <a href="getting-started/" class="md-nav__link">
         Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rose-cylc-rosie/" class="md-nav__link">
+        Rose, Cylc and Rosie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="experiments/" class="md-nav__link">
+        Experiments
       </a>
     </li>
   
@@ -1301,15 +1333,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#access-cm2-configuration" class="md-nav__link">
-    ACCESS-CM2 configuration:
+  <a href="#access-cm2-configurations" class="md-nav__link">
+    ACCESS-CM2 configurations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#experiments" class="md-nav__link">
-    Experiments
+  <a href="#rosecylc" class="md-nav__link">
+    Rose/Cylc
   </a>
   
 </li>
@@ -1332,8 +1364,16 @@
   
 
 
-<h1 id="access-cm2">ACCESS-CM2</h1>
-<h2 id="access-cm2-configuration">ACCESS-CM2 configuration:</h2>
+<h1 id="access-cm2"><strong><span style="color:orange">ACCESS-CM2</span></strong></h1>
+<p><img align="right" alt="ACCESS-CM2 Diagram" src="assets/access_cm2_components_diagram.png" width="50%" /></p>
+<p><i>(Why there is no aerosol component in the diagram on the right taken from ACESS-NRI website?)</i></p>
+<div style="text-align: justify">
+ACCESS-CM2 (ACCESS Coupled Model 2) is a global fully-coupled climate model that includes the atmosphere, ocean and sea-ice components, and produces physical climate simulations. ACCESS-CM2 is one of the two models run by the Australian climate community for the 
+<a href = "https://www.wcrp-climate.org/wgcm-cmip" target="_blank"> Coupled Model Intercomparison Project, CMIP</a>.
+<br>
+</div>
+
+<h2 id="access-cm2-configurations">ACCESS-CM2 configurations</h2>
 <ul>
 <li>
 <p>Atmosphere model (UM10.6): N96 resolution (1.875° x 1.25°, 85 levels). Physical model only – no carbon cycle.</p>
@@ -1380,36 +1420,21 @@
 <td>OASIS-MCT</td>
 <td>3</td>
 </tr>
+<tr>
+<td>## Getting started with ACCESS-CM2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>(Heidi)</em></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 </li>
 </ul>
-<h2 id="experiments">Experiments</h2>
-<p>ACCESS-CM2 suites for CMIP6 Scenarios are listed on the <a href="https://confluence.csiro.au/display/ACCESS/CMIP6+Archive+-+ACCESS-CM2">CSIRO's CMIP6 archive</a>. </p>
-<p>Portable ACCESS-CM2 CMIP6 suites available to the ACCESS community include: </p>
-<table>
-<thead>
-<tr>
-<th>EXPERIMENT</th>
-<th>SUITE</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Pre-industrial control</td>
-<td>br-565</td>
-</tr>
-<tr>
-<td>Historical</td>
-<td></td>
-</tr>
-<tr>
-<td>AMIP</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Various CM2 suites can be searched using the <a href="https://code.metoffice.gov.uk/rosie/u/search?s=access+cm2">Rosie Suites Discovery</a> tool, although you need to have a MOSR account to access this. </p>
+<h2 id="rosecylc">Rose/Cylc</h2>
 
 
 
