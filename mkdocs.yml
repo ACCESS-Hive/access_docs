@@ -40,6 +40,10 @@ copyright: Copyright &copy; 2023 - ACCESS-NRI
 extra_css:
   - css/fontello.css
 
+plugins:
+  - bibtex:
+      bib_file: "references.bib"
+
 # Extensions
 markdown_extensions:
   - attr_list

@@ -2,6 +2,7 @@
 This section outlines some key user requirements and preparations before getting started with running ACCESS-CM suites.
 
 To proceed further, you will need to have:
+
 - An institutional email address with an organisation that allows access to NCI (e.g., CSIRO, a university, etc.).
 - Access to NCI compute/storage.
 - A Linux/Mac/Unix computer with an internet connection and a command line terminal (e.g., MacOS with XQuartz and command line tools installed, or Putty Cygwin/MobaXterm/similar X-Windows compatible program on a PC). 
@@ -77,3 +78,13 @@ To run compute tasks such as an ACCESS-CM suite on Gadi, users need to submit th
 
 On job completion, contents of the job’s standard output/error stream gets copied to a file in the working directory with the respective format: `<jobname>.o<jobid>` and `<jobname>.e<jobid>`. Users should check these two log files before proceeding with post-processing of any output from their corresponding job.
 
+-----------------
+
+## References 
+
+<a id="1">[1]</a> 
+Bodman, R. and Mackallah, C. and Dobrohotoff, P. (2020). 
+Getting Started with ACCESS-CM2, 1-21.
+https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf
+
+[@Bodman2020]
