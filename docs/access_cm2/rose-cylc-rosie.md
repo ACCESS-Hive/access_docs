@@ -24,18 +24,18 @@ To copy an existing suite, on <i>accessdev</i>:
 <ol>
     <li>
         Run <code>mosrs-auth</code> to authenticate using your MOSRS credentials (see 
-        <a href="access_cm2/getting-started/#met-office-science-repository-service-mosrs" target="_blank">Met Office Science Repository Service (MOSRS)</a> for troubleshooting):
+        <a href="../access_cm2/getting-started/#met-office-science-repository-service-mosrs" target="_blank">Met Office Science Repository Service (MOSRS)</a> for troubleshooting):
         <br>
-        <img src="assets/mosrs-auth_command.gif" alt="mosrs-auth command">
+        <img src="../assets/mosrs-auth_command.gif" alt="mosrs-auth command">
     </li>
     <li>
         Run <code>rosie checkout [suite-ID]</code> to create a local copy of the <code>[suite-ID]</code> from the UKMO repository (used mostly for testing and examining existing suites):
         <br>
-        <img src="assets/rosie_checkout_command.gif" alt="rosie checkout command">
+        <img src="../assets/rosie_checkout_command.gif" alt="rosie checkout command">
         <br>
         Alternatively, run <code>rosie copy [suite-ID]</code> to create a new full copy (local and remote in the UKMO repository) rather than just a local copy. When a new suite is created in this way, a new unique name is generated within the repository, and populated with some descriptive information about the suite along with all the initial configuration details:
         <br>
-        <img src="assets/rosie_copy_command.gif" alt="rosie copy command">
+        <img src="../assets/rosie_copy_command.gif" alt="rosie copy command">
     </li>
 </ol>
 For additional <code>rosie</code> options, run <code>rosie help</code>.
@@ -49,7 +49,7 @@ The suite directory usually contains 2 subdirectories and 3 files:
     <li><code>rose-suite.conf</code> --> the main suite configuration file.</li>
     <li><code>rose-suite.info</code> --> suite information file.</li>
     <li><code>suite.rc</code> --> the Cylc control script file (Jinja2 language).</li>
-    <img src="assets/suite_content.gif" alt="suite content" />
+    <img src="../assets/suite_content.gif" alt="suite content" />
 </ul>
 </div>
 
@@ -64,7 +64,7 @@ To edit a suite configuration, on <i>accessdev</i>:
     <li>
         Run <code>rose edit &</code> (the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process) from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to open the Rose GUI and inspect the suite information.
         <br>
-        <img src="assets/rose_gui.gif" alt="Rose GUI TO DO" />
+        <img src="../assets/rose_gui.gif" alt="Rose GUI" style="width:700px"/>
     </li>
     <li>
         There are many settings that can be changed in a Rose GUI. However, there are a few that we definitely want to check and edit before we run a suite:
@@ -72,36 +72,38 @@ To edit a suite configuration, on <i>accessdev</i>:
             <li>
                 NCI Project
                 <br>
-                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf --> Machine and Runtime Options</i> and edit the <i>Compute project</i> field. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
+                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf --> Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and press the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
+                <br>
                 If, for example, we belong to the <i>tm70</i> Project (ACCESS-NRI), we will insert <code>tm70</code> in the <i>Compute project</i> field:
                 <br>
-                <img src="assets/rose_change_project.gif" alt="Rose change Project TO DO" />
+                <img src="../assets/rose_change_project.gif" alt="Rose change Project" style="width:700px"/>
             </li>
             <li>
                 Total Run length / Cycling frequency
                 <br>
                 ACCESS-CM2 suites are often run in multiple steps, each of them constituting a cycle, with the job scheduler resubmitting the suite every chosen <i>Cycling frequency</i>, until the <i>Total Run length</i> is met.
                 <br>
-                To modify these parameters, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i> and edit the respective fields. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify these parameters, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective fields, and press the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
                 <br>
                 If, for example, we want to run the suite for a total of 50 Years, and resubmit every year, we will change <i>Total Run length</i> to <code>P50Y</code> and <i>Cycling frequency</i> to <code>P1Y</code>. Note that the current maximum <i>Cycling frequency</i> is 2 years:
                 <br>
-                <img src="assets/rose_change_run_length.gif" alt="Rose change run length TO DO" />
+                <img src="../assets/rose_change_run_length.gif" alt="Rose change run length" style="width:700px"/>
             </li>
             <li>
                 Wallclock time
                 <br>
-                The <i>Wallclock time</i> is the time requested by the <a href="getting-started/#pbs-jobs" target="_blank">PBS job</a> to run a single cycle. If this time is not enough for the suite to end its cycle, our job will be terminated before the suite can complete the run. 
+                The <i>Wallclock time</i> is the time requested by the <a href="../getting-started/#pbs-jobs" target="_blank">PBS job</a> to run a single cycle. If this time is not enough for the suite to end its cycle, our job will be terminated before the suite can complete the run. 
                 <br>
                 If we change the <i>Cycling frequency</i>, we might need to change the <i>Wallclock time</i> accordingly. 
                 <br>
                 The time needed for the suite to run a full cycle depends on several factors, but a good estimation can be 4 hours per simulated year.
                 <br>
-                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i> and edit the respective field. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective field, and press the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
             </li>
         </ul>
     </li>
 </ol>
+For more details on how to edit other suite parameters using Rose GUI, such as component configurations, output variables (STASH), or science settings, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide</a>.
 </div>
 
 ## Run an ACCESS-CM2 suite
