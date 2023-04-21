@@ -3,7 +3,7 @@ hide:
     - toc
 --- -->
 <!-- Lines above to hide table of content -->
-# <span style="color:orange">Rose, Cylc and Rosie</span>
+# Copy, Edit, and Run an ACCESS-CM2 suite
 
 <div style="text-align: justify">
 ACCESS-CM2 is a set of sub-models (eg. UM, MOM, CICE, CABLE, OASIS) with a range of model parameters, input data, and computer related information, that need to be packaged together as a <i>suite</i> in order to run.
@@ -14,7 +14,7 @@ Typically, an existing suite is copied and then edited as needed for a particula
 <br>
 </div>
 
-## Copying ACCESS-CM2 suites with Rosie
+## Copy ACCESS-CM2 suites with Rosie
 
 <div style="text-align: justify">
 <a href = "http://metomi.github.io/rose/doc/html/tutorial/rose/rosie.html" target="_blank">Rosie</a> is an <a href = "https://subversion.apache.org/" target="_blank">SVN</a> repository wrapper with a set of options to work with ACCESS-CM2 suites.
@@ -53,7 +53,8 @@ The suite directory usually contains 2 subdirectories and 3 files:
 </ul>
 </div>
 
-## Rose and top-level suite configuration
+## Edit an ACCESS-CM2 suite configuration with Rose GUI
+
 <div style="text-align: justify">
 <a href = "http://metomi.github.io/rose/doc/html/index.html" target="_blank">Rose</a> is a configuration editor which can be used to view, edit, or run an ACCESS-CM2 suite.
 <br>
@@ -101,10 +102,9 @@ To edit a suite configuration, on <i>accessdev</i>:
         </ul>
     </li>
 </ol>
+</div>
 
-
-## Cylc 
-
+## Run an ACCESS-CM2 suite
 
 <br><br><br><br><br><br><br>
 Note that each suite directory is copied to Gadi

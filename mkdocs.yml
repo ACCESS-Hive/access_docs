@@ -58,7 +58,7 @@ nav:
   - ACCESS-CM2: 
     - access_cm2/index.md
     - Getting Started: access_cm2/getting-started.md
-    - Rose, Cylc and Rosie: access_cm2/rose-cylc-rosie.md
+    - Copy, Edit, and Run an ACCESS-CM2 suite: access_cm2/rose-cylc-rosie.md
     - Experiments: access_cm2/experiments.md
   - ACCESS-ESM1.5: 
       - access_esm1_5/index.md
