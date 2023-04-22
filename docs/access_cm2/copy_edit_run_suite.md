@@ -52,6 +52,7 @@ The suite directory usually contains 2 subdirectories and 3 files:
     <img src="../assets/suite_content.gif" alt="suite content" />
 </ul>
 </div>
+----------------------------------------------------------------------------------------
 
 ## Edit an ACCESS-CM2 suite configuration with Rose GUI
 
@@ -105,31 +106,54 @@ To edit a suite configuration, on <i>accessdev</i>:
 </ol>
 For more details on how to edit other suite parameters using Rose GUI, such as component configurations, output variables (STASH), or science settings, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide</a>.
 </div>
+----------------------------------------------------------------------------------------
 
 ## Run an ACCESS-CM2 suite
 
-<br><br><br><br><br><br><br>
-Note that each suite directory is copied to Gadi
-when it is run with cylc, where the scripts are then sent to the PBS job queue.
-There are two ways of editing a suite, approaches that can be used individually or in
-conjunction, whichever the user finds most useful or easier. One is to use the Rose
-GUI, the other is to use a text/terminal editor (e.g. nano, nedit, etc.).
+<div style="text-align: justify">
+After completing all the modifications to the suite, we are ready to run it.
+<br>
+ACCESS-CM2 suites run on <a href="../getting-started#gadi" target="_blank">Gadi(TO DO check link)</a> through a PBS job submission.
+<br>
+When the suite gets run, the suite configuration files are copied on Gadi under <code>/scratch/[Project]/$USER/cylc-run/[suite-ID]</code>, and a symbolic link to this folder is also created in the <code>$USER</code>'s home directory under <code>~/cylc-run/[suite-ID]</code>.
+<br>
+An ACCESS-CM2 suite is constituted by several tasks (such as checking out code repositories, compiling and building the different model components, running the model, etc.). The workflow of these tasks is controlled by Cylc.
+<br>
+<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" targe="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. Cylc deals with how the job will be run and the time steps of each sub-model, as well as monitoring all the tasks and reporting any error that might occur.
+<br>
+To run an ACCESS-CM2 suite, on <i>accessdev</i>:
+<ol>
+    <li>
+        Run <code>rose suite-run</code> from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to run the initial tasks.
+    </li>
+    <li>
+        After these few small tasks get executed, the Cylc GUI will open up and you will be able to see and control all the different tasks in the suite as they are run.
+    </li>
+    <img src="../assets/cylc_GUI.gif" alt="TO DO Cylc GUI" />
+</ol>
+You are done! If you don't get any errors, you will be able to check the suite output files after the run is complete.
+<br>
+Note that, at this stage, it is possible to close the Cylc GUI. If you want to open it again, just run:
+<code>gcylc ..... TO DO check command</code>.
 
+</div>
+----------------------------------------------------------------------------------------
 
-Note that each suite directory is copied to Gadi when it is run with cylc, where the scripts are then sent to the PBS job queue. There are two ways to edit a suite:
+## Check for errors and basic debugging
 
-1. Use the Rose GUI
-2. Use a text/terminal editor (e.g. nano, emacs, etc.).
+<div style="text-align: justify">
+It is quite common, especially during the first few runs, to experience errors and job failures.
+<br>
+TO DO
+</div>
 
-Rose and cylc are invariably used together in rose/cylc suites.
+----------------------------------------------------------------------------------------
 
+## Suite output files
+<div style="text-align: justify">
+TO DO
+</div>
 
-Pronounced ‘silk’, [cylc](https://cylc.github.io/cylc-doc/7.8.8/html/index.html) is a workflow engine that automatically executes tasks according to schedules and dependencies. Effectively a job scheduler, cylc deals with specifications for how the job will be run and the time steps of each sub-model.
-
-Cylc also provides important capabilities for monitoring jobs, particularly for dealing with jobs that have failed during processing but can be restarted from a previous timestep (rather than starting all over again).
-
-At NCI, the current version cylc 7 will be soon replaced by cylc 8. 
- 
 <!-- References -->
 <br>
 <h6>References:</h6>

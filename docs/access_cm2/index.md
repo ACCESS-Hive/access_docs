@@ -28,6 +28,3 @@ ACCESS-CM2 (ACCESS Coupled Model 2) is a global fully-coupled climate model that
     | Coupler       | OASIS-MCT     | 3                     |
 ## Getting started with ACCESS-CM2
 *(Heidi)*
-
-## Rose/Cylc
-
