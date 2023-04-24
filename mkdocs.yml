@@ -40,6 +40,8 @@ copyright: Copyright &copy; 2023 - ACCESS-NRI
 extra_css:
   - css/fontello.css
 
+plugins: 
+      
 # Extensions
 markdown_extensions:
   - attr_list
