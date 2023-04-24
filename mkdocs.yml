@@ -41,8 +41,6 @@ extra_css:
   - css/fontello.css
 
 plugins: 
-  - bibtex:
-      bib_file: "references.bib"
       
 # Extensions
 markdown_extensions:
