@@ -63,7 +63,7 @@ To edit a suite configuration, on <i>accessdev</i>:
 <!-- Change this to gadi/ARE when it will be completely possible to run CM2 fully on gadi-->
 <ol>
     <li>
-        Run <code>rose edit &</code> (the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process) from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to open the Rose GUI and inspect the suite information.
+        Run <code>rose edit &</code> (the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process) from inside the relevant suite directory (e.g. <code>~/roses/[suite-ID]</code>) to open the Rose GUI and inspect the suite information.
         <br>
         <img src="../assets/rose_gui.gif" alt="Rose GUI" style="width:700px"/>
     </li>
@@ -113,53 +113,146 @@ For more details on how to edit other suite parameters using Rose GUI, such as c
 <div style="text-align: justify">
 After completing all the modifications to the suite, we are ready to run it.
 <br>
-ACCESS-CM2 suites run on <a href="../getting-started#gadi" target="_blank">Gadi(TO DO check link)</a> through a PBS job submission.
+ACCESS-CM2 suites run on <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-Overview" target="_blank">Gadi</a> through a PBS job submission.
 <br>
 When the suite gets run, the suite configuration files are copied on Gadi under <code>/scratch/[Project]/$USER/cylc-run/[suite-ID]</code>, and a symbolic link to this folder is also created in the <code>$USER</code>'s home directory under <code>~/cylc-run/[suite-ID]</code>.
 <br>
 An ACCESS-CM2 suite is constituted by several tasks (such as checking out code repositories, compiling and building the different model components, running the model, etc.). The workflow of these tasks is controlled by Cylc.
 <br>
-<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" targe="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. Cylc deals with how the job will be run and the time steps of each sub-model, as well as monitoring all the tasks and reporting any error that might occur.
+<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" targe="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. Cylc deals with how the job will be run and manages the time steps of each sub-model, as well as monitoring all the tasks and reporting any error that might occur.
 <br>
 To run an ACCESS-CM2 suite, on <i>accessdev</i>:
 <ol>
     <li>
-        Run <code>rose suite-run</code> from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to run the initial tasks.
+        Run <code>rose suite-run</code>, from inside the suite directory, to run the initial tasks.
     </li>
     <li>
         After these few small tasks get executed, the Cylc GUI will open up and you will be able to see and control all the different tasks in the suite as they are run.
     </li>
-    <img src="../assets/cylc_GUI.gif" alt="TO DO Cylc GUI" />
+    <img src="../assets/rose_suite_run.gif" alt="rose suite-run" style="width:700px"/>
 </ol>
 You are done! If you don't get any errors, you will be able to check the suite output files after the run is complete.
 <br>
-Note that, at this stage, it is possible to close the Cylc GUI. If you want to open it again, just run:
-<code>gcylc ..... TO DO check command</code>.
+Note that, at this stage, it is possible to close the Cylc GUI.
+<br>
+If you want to open it again, just run <code>rose suite-gcontrol</code> from inside the suite directory.
 
 </div>
 ----------------------------------------------------------------------------------------
 
-## Check for errors and basic debugging
+## Check for errors
 
 <div style="text-align: justify">
-It is quite common, especially during the first few runs, to experience errors and job failures.
+It is quite common, especially during the first few runs, to experience errors and job failures. An ACCESS-CM2 suite is constituted by several tasks, 
+and each of these tasks could fail. When a task fails, the suite is halted and you will see a red icon next to the respective task name in the Cylc GUI. 
 <br>
-TO DO
+To investigate the cause of a failure, we need to look at the logs (<code>job.err</code> and <code>job.out</code>) from the suite run. There are two main ways to do so:
+<ul>
+    <li>
+        Using the Cylc GUI
+        <br>
+        Right-click on the task that failed and click on <i>View Job Logs (Viewer) --> job.err</i> or <i>job.out</i>.
+        <br>
+        To access the specific task you might have to click on the arrow next to the task, to extend the drop-down menu with all the sub-taks.
+        <br>
+        <img src="../assets/investigate_error_gui.gif" alt="Investigate Error GUI" />
+    </li>
+    <li>
+        In the <code>~/cylc-run/[suite-ID]</code> directory
+        <br>
+        The suite logs directories are stored inside <code>~/cylc-run/[suite-ID]</code> as <code>log.[TIMESTAMP]</code>, with the lastest set of logs also symlinked in the <code>~/cylc-run/[suite-ID]/log</code> directory.
+        <br>
+        The logs for the main job are inside the <code>~/cylc-run/[suite-ID]/log/job</code> directory.
+        <br>
+        Logs are separated into simulation cycles through their starting dates, and then differentiated by task.
+        <br>
+        They are then further separated into "attempts" (consecutive failed/successful tasks), with <code>NN</code> being a symlink to the most recent attempt.
+        <br>
+        In our example, the failure occurred for the <i>09500101</i> simulation cycle (starting date on 1st January 950) in the <i>coupled</i> task. Therefore, the directory where to find the <code>job.err</code> and <code>job.out</code> files is <code>~/cylc-run/[suite-ID]/log/job/09500101/coupled/NN</code>.
+        <br>
+        <img src="../assets/investigate_error_directory.gif" alt="Investigate Error directory" />
+    </li>
+</ul>
+
+</div>
+
+----------------------------------------------------------------------------------------
+
+## Stop, restart and reload suites
+
+<div style="text-align: justify">
+Sometimes, you may want to control the running state of a suite.
+<br>
+If your Cylc GUI has been closed and you are unsure whether your suite is still running, you can scan for active suites and reopen the GUI if desired.
+<br>
+To scan for active suites run <code>cylc scan</code>.
+<br>
+To reopen the Cylc GUI there are 2 main ways:
+<ul>
+    <li>
+        run <code>rose suite-gcontrol</code> from inside the suite directory
+    </li>
+    OR
+    <li>
+        run <code>gcylc [suite-ID]</code>
+    </li>
+</ul> 
+<br>
+<img src="../assets/cylc_scan_reopen.gif" alt="Cylc scan and reopen" />
+</div>
+
+### STOP a suite
+<div style="text-align: justify">
+Run <code>rose suite-stop -y</code>, from inside the suite directory, to shutdown a suite in a safe manner.
+</div>
+
+### RESTART a suite
+<div style="text-align: justify">
+There are two main ways to restart a suite:
+<ul>
+    <li>
+        'SOFT' restart
+        <br>
+        Run <code>rose suite-run --restart</code>, from inside the suite directory, to re-install the suite and reopen Cylc in the same state as when it was stopped (you may need to manually trigger failed tasks from the Cylc GUI).
+        <br>
+        <img src="../assets/soft_restart_suite.gif" alt="Soft Restart suite" />
+    </li>
+    <li>
+        'HARD' restart
+        <br>
+        Run <code>rose suite-run --new</code>, from inside the suite directory, if you want to overwrite any previous runs of the suite and begin completely afresh (WARNING!! This will overwrite all existing model output and logs).
+    </li>
+</ul>
+</div>
+
+### RELOAD a suite
+<div style="text-align: justify">
+In some cases the suite needs to be updated without necessarily having to stop it (e.g. after fixing a typo in a file). Updating an active suite is called a 'reload', where the suite is 're-installed' and Cylc is updated with the changes (this is similar to a 'soft' restart, but with the new changes installed, so you may need to manually trigger failed tasks from the Cylc GUI).
+<br>
+To reload a suite run <code>rose suite-run --reload</code> from inside the suite directory.
 </div>
 
 ----------------------------------------------------------------------------------------
 
 ## Suite output files
+
 <div style="text-align: justify">
-TO DO
+All output files (as well as work files) are available on Gadi under <code>/scratch/$PROJECT/$USER/cylc-run/[suite-ID]</code> (also symlinked in <code>~/cylc-run/[suite-ID]</code>).
+<br>
+While the suite is running, files move between the <code>share</code> and the <code>work</code> directories.
+<br>
+At the end of each cycle, model output data and restart files are moved to <code>/scratch/$PROJECT/$USER/archive/[suite-ID]</code> (also symlinked in <code>~/archive/[suite-ID]</code>). 
 </div>
 
 <!-- References -->
 <br>
-<h6>References:</h6>
+<h6>References</h6>
 <ul style="font-size:0.8em;">
     <li>
         <a href = "https://confluence.csiro.au/display/ACCESS/Using+CM2+suites+in+Rose+and+Cylc" target="_blank">https://confluence.csiro.au/display/ACCESS/Using+CM2+suites+in+Rose+and+Cylc</a>
+    </li>
+    <li>
+        <a href = "https://confluence.csiro.au/display/ACCESS/Understanding+CM2+output" target="_blank">https://confluence.csiro.au/display/ACCESS/Understanding+CM2+output</a>
     </li>
     <li>
         <a href = "https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf" target="_blank">https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf</a>
