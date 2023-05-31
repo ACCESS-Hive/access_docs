@@ -44,11 +44,11 @@ The suites are created in the user's <i>accessdev</i> home directory, under <cod
 <br>
 The suite directory usually contains 2 subdirectories and 3 files:
 <ul>
-    <li><code>app</code> --> directory containing the configuration files for the various tasks within the suite.</li>
-    <li><code>meta</code> --> directory containing the GUI metadata.</li>
-    <li><code>rose-suite.conf</code> --> the main suite configuration file.</li>
-    <li><code>rose-suite.info</code> --> suite information file.</li>
-    <li><code>suite.rc</code> --> the Cylc control script file (Jinja2 language).</li>
+    <li><code>app</code> &rarr; directory containing the configuration files for the various tasks within the suite.</li>
+    <li><code>meta</code> &rarr; directory containing the GUI metadata.</li>
+    <li><code>rose-suite.conf</code> &rarr; the main suite configuration file.</li>
+    <li><code>rose-suite.info</code> &rarr; suite information file.</li>
+    <li><code>suite.rc</code> &rarr; the Cylc control script file (Jinja2 language).</li>
     <img src="../assets/suite_content.gif" alt="suite content" />
 </ul>
 </div>
@@ -73,7 +73,7 @@ To edit a suite configuration, on <i>accessdev</i>:
             <li>
                 NCI Project
                 <br>
-                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf --> Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
+                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf &rarr; Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
                 <br>
                 If, for example, we belong to the <i>tm70</i> Project (ACCESS-NRI), we will insert <code>tm70</code> in the <i>Compute project</i> field:
                 <br>
@@ -84,7 +84,7 @@ To edit a suite configuration, on <i>accessdev</i>:
                 <br>
                 ACCESS-CM2 suites are often run in multiple steps, each of them constituting a cycle, with the job scheduler resubmitting the suite every chosen <i>Cycling frequency</i>, until the <i>Total Run length</i> is met.
                 <br>
-                To modify these parameters, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective fields, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify these parameters, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective fields, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
                 <br>
                 If, for example, we want to run the suite for a total of 50 Years, and resubmit every year, we will change <i>Total Run length</i> to <code>P50Y</code> and <i>Cycling frequency</i> to <code>P1Y</code>. Note that the current maximum <i>Cycling frequency</i> is 2 years:
                 <br>
@@ -99,7 +99,7 @@ To edit a suite configuration, on <i>accessdev</i>:
                 <br>
                 The time needed for the suite to run a full cycle depends on several factors, but a good estimation can be 4 hours per simulated year.
                 <br>
-                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
             </li>
         </ul>
     </li>
@@ -151,7 +151,7 @@ To investigate the cause of a failure, we need to look at the logs (<code>job.er
     <li>
         Using the Cylc GUI
         <br>
-        Right-click on the task that failed and click on <i>View Job Logs (Viewer) --> job.err</i> or <i>job.out</i>.
+        Right-click on the task that failed and click on <i>View Job Logs (Viewer) &rarr; job.err</i> or <i>job.out</i>.
         <br>
         To access the specific task you might have to click on the arrow next to the task, to extend the drop-down menu with all the sub-taks.
         <br>
@@ -241,7 +241,45 @@ All output files (as well as work files) are available on Gadi under <code>/scra
 <br>
 While the suite is running, files move between the <code>share</code> and the <code>work</code> directories.
 <br>
-At the end of each cycle, model output data and restart files are moved to <code>/scratch/$PROJECT/$USER/archive/[suite-ID]</code> (also symlinked in <code>~/archive/[suite-ID]</code>). 
+At the end of each cycle, model output data and restart files are moved to <code>/scratch/$PROJECT/$USER/archive/[suite-name]</code>. 
+<br>
+This directory contains 2 subdirectories:
+<ul>
+    <li>
+        <code>history</code>
+        <br>
+        This is the directory where the model output data is found, separated for each model component: 
+        <ul>
+            <li>
+            <code>atm</code> &rarr; atmosphere (UM)
+            </li>
+            <li>
+            <code>cpl</code> &rarr; coupler (OASIS3-MCT)
+            </li>
+            <li>
+            <code>ocn</code> &rarr; ocean (MOM)
+            </li>
+            <li>
+            <code>ice</code> &rarr; ice (CICE)
+            </li>
+        </ul>
+        For the atmospheric output data, each file it is usually a <a href = "https://code.metoffice.gov.uk/doc/um/latest/papers/umdp_F03.pdf" target="_blank">UM fieldsfile</a> or netCDF file, formatted as <code>[suite-name]a.p[output stream identifier][year][month string]</code>.
+        <br>
+        <img src="../assets/history_data.gif" alt="History Data" />
+        <br>
+        For more details on how to control different output variables (STASH), and output streams, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>.
+    </li>
+    <li>
+        <code>restart</code>
+        <br>
+        This is the directory where the restart dumps are found, subdivided for each model component (see <code>history</code> folder above).
+        <br>
+        For the atmospheric restart files, each of them it is usually formatted as <code>[suite-name]a.da[year][month][day]_00</code>.
+        <br>
+        For more details on how to control the frequency and formatting of restart dumps, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>.
+    </li>
+</ul>
+
 </div>
 
 <!-- References -->
