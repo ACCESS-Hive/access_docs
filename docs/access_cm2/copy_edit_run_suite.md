@@ -44,11 +44,11 @@ The suites are created in the user's <i>accessdev</i> home directory, under <cod
 <br>
 The suite directory usually contains 2 subdirectories and 3 files:
 <ul>
-    <li><code>app</code> --> directory containing the configuration files for the various tasks within the suite.</li>
-    <li><code>meta</code> --> directory containing the GUI metadata.</li>
-    <li><code>rose-suite.conf</code> --> the main suite configuration file.</li>
-    <li><code>rose-suite.info</code> --> suite information file.</li>
-    <li><code>suite.rc</code> --> the Cylc control script file (Jinja2 language).</li>
+    <li><code>app</code> &rarr; directory containing the configuration files for the various tasks within the suite.</li>
+    <li><code>meta</code> &rarr; directory containing the GUI metadata.</li>
+    <li><code>rose-suite.conf</code> &rarr; the main suite configuration file.</li>
+    <li><code>rose-suite.info</code> &rarr; suite information file.</li>
+    <li><code>suite.rc</code> &rarr; the Cylc control script file (Jinja2 language).</li>
     <img src="../assets/suite_content.gif" alt="suite content" />
 </ul>
 </div>
@@ -63,7 +63,7 @@ To edit a suite configuration, on <i>accessdev</i>:
 <!-- Change this to gadi/ARE when it will be completely possible to run CM2 fully on gadi-->
 <ol>
     <li>
-        Run <code>rose edit &</code> (the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process) from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to open the Rose GUI and inspect the suite information.
+        Run <code>rose edit &</code> (the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process) from inside the relevant suite directory (e.g. <code>~/roses/[suite-ID]</code>) to open the Rose GUI and inspect the suite information.
         <br>
         <img src="../assets/rose_gui.gif" alt="Rose GUI" style="width:700px"/>
     </li>
@@ -73,7 +73,7 @@ To edit a suite configuration, on <i>accessdev</i>:
             <li>
                 NCI Project
                 <br>
-                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf --> Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
+                To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf &rarr; Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
                 <br>
                 If, for example, we belong to the <i>tm70</i> Project (ACCESS-NRI), we will insert <code>tm70</code> in the <i>Compute project</i> field:
                 <br>
@@ -84,7 +84,7 @@ To edit a suite configuration, on <i>accessdev</i>:
                 <br>
                 ACCESS-CM2 suites are often run in multiple steps, each of them constituting a cycle, with the job scheduler resubmitting the suite every chosen <i>Cycling frequency</i>, until the <i>Total Run length</i> is met.
                 <br>
-                To modify these parameters, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective fields, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify these parameters, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective fields, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
                 <br>
                 If, for example, we want to run the suite for a total of 50 Years, and resubmit every year, we will change <i>Total Run length</i> to <code>P50Y</code> and <i>Cycling frequency</i> to <code>P1Y</code>. Note that the current maximum <i>Cycling frequency</i> is 2 years:
                 <br>
@@ -99,7 +99,7 @@ To edit a suite configuration, on <i>accessdev</i>:
                 <br>
                 The time needed for the suite to run a full cycle depends on several factors, but a good estimation can be 4 hours per simulated year.
                 <br>
-                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf --> Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
+                To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../assets/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
             </li>
         </ul>
     </li>
@@ -113,53 +113,184 @@ For more details on how to edit other suite parameters using Rose GUI, such as c
 <div style="text-align: justify">
 After completing all the modifications to the suite, we are ready to run it.
 <br>
-ACCESS-CM2 suites run on <a href="../getting-started#gadi" target="_blank">Gadi(TO DO check link)</a> through a PBS job submission.
+ACCESS-CM2 suites run on <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-Overview" target="_blank">Gadi</a> through a PBS job submission.
 <br>
 When the suite gets run, the suite configuration files are copied on Gadi under <code>/scratch/[Project]/$USER/cylc-run/[suite-ID]</code>, and a symbolic link to this folder is also created in the <code>$USER</code>'s home directory under <code>~/cylc-run/[suite-ID]</code>.
 <br>
 An ACCESS-CM2 suite is constituted by several tasks (such as checking out code repositories, compiling and building the different model components, running the model, etc.). The workflow of these tasks is controlled by Cylc.
 <br>
-<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" targe="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. Cylc deals with how the job will be run and the time steps of each sub-model, as well as monitoring all the tasks and reporting any error that might occur.
+<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" targe="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. Cylc deals with how the job will be run and manages the time steps of each sub-model, as well as monitoring all the tasks and reporting any error that might occur.
 <br>
 To run an ACCESS-CM2 suite, on <i>accessdev</i>:
 <ol>
     <li>
-        Run <code>rose suite-run</code> from inside the relevant suite directory (e.g. <code>~/roses/u-[suite_ID]</code>) to run the initial tasks.
+        Run <code>rose suite-run</code>, from inside the suite directory, to run the initial tasks.
     </li>
     <li>
         After these few small tasks get executed, the Cylc GUI will open up and you will be able to see and control all the different tasks in the suite as they are run.
     </li>
-    <img src="../assets/cylc_GUI.gif" alt="TO DO Cylc GUI" />
+    <img src="../assets/rose_suite_run.gif" alt="rose suite-run" style="width:700px"/>
 </ol>
 You are done! If you don't get any errors, you will be able to check the suite output files after the run is complete.
 <br>
-Note that, at this stage, it is possible to close the Cylc GUI. If you want to open it again, just run:
-<code>gcylc ..... TO DO check command</code>.
+Note that, at this stage, it is possible to close the Cylc GUI.
+<br>
+If you want to open it again, just run <code>rose suite-gcontrol</code> from inside the suite directory.
 
 </div>
 ----------------------------------------------------------------------------------------
 
-## Check for errors and basic debugging
+## Check for errors
 
 <div style="text-align: justify">
-It is quite common, especially during the first few runs, to experience errors and job failures.
+It is quite common, especially during the first few runs, to experience errors and job failures. An ACCESS-CM2 suite is constituted by several tasks, 
+and each of these tasks could fail. When a task fails, the suite is halted and you will see a red icon next to the respective task name in the Cylc GUI. 
 <br>
-TO DO
+To investigate the cause of a failure, we need to look at the logs (<code>job.err</code> and <code>job.out</code>) from the suite run. There are two main ways to do so:
+<ul>
+    <li>
+        Using the Cylc GUI
+        <br>
+        Right-click on the task that failed and click on <i>View Job Logs (Viewer) &rarr; job.err</i> or <i>job.out</i>.
+        <br>
+        To access the specific task you might have to click on the arrow next to the task, to extend the drop-down menu with all the sub-taks.
+        <br>
+        <img src="../assets/investigate_error_gui.gif" alt="Investigate Error GUI" />
+    </li>
+    <li>
+        In the <code>~/cylc-run/[suite-ID]</code> directory
+        <br>
+        The suite logs directories are stored inside <code>~/cylc-run/[suite-ID]</code> as <code>log.[TIMESTAMP]</code>, with the lastest set of logs also symlinked in the <code>~/cylc-run/[suite-ID]/log</code> directory.
+        <br>
+        The logs for the main job are inside the <code>~/cylc-run/[suite-ID]/log/job</code> directory.
+        <br>
+        Logs are separated into simulation cycles through their starting dates, and then differentiated by task.
+        <br>
+        They are then further separated into "attempts" (consecutive failed/successful tasks), with <code>NN</code> being a symlink to the most recent attempt.
+        <br>
+        In our example, the failure occurred for the <i>09500101</i> simulation cycle (starting date on 1st January 950) in the <i>coupled</i> task. Therefore, the directory where to find the <code>job.err</code> and <code>job.out</code> files is <code>~/cylc-run/[suite-ID]/log/job/09500101/coupled/NN</code>.
+        <br>
+        <img src="../assets/investigate_error_directory.gif" alt="Investigate Error directory" />
+    </li>
+</ul>
+
+</div>
+
+----------------------------------------------------------------------------------------
+
+## Stop, restart and reload suites
+
+<div style="text-align: justify">
+Sometimes, you may want to control the running state of a suite.
+<br>
+If your Cylc GUI has been closed and you are unsure whether your suite is still running, you can scan for active suites and reopen the GUI if desired.
+<br>
+To scan for active suites run <code>cylc scan</code>.
+<br>
+To reopen the Cylc GUI there are 2 main ways:
+<ul>
+    <li>
+        run <code>rose suite-gcontrol</code> from inside the suite directory
+    </li>
+    OR
+    <li>
+        run <code>gcylc [suite-ID]</code>
+    </li>
+</ul> 
+<br>
+<img src="../assets/cylc_scan_reopen.gif" alt="Cylc scan and reopen" />
+</div>
+
+### STOP a suite
+<div style="text-align: justify">
+Run <code>rose suite-stop -y</code>, from inside the suite directory, to shutdown a suite in a safe manner.
+</div>
+
+### RESTART a suite
+<div style="text-align: justify">
+There are two main ways to restart a suite:
+<ul>
+    <li>
+        'SOFT' restart
+        <br>
+        Run <code>rose suite-run --restart</code>, from inside the suite directory, to re-install the suite and reopen Cylc in the same state as when it was stopped (you may need to manually trigger failed tasks from the Cylc GUI).
+        <br>
+        <img src="../assets/soft_restart_suite.gif" alt="Soft Restart suite" />
+    </li>
+    <li>
+        'HARD' restart
+        <br>
+        Run <code>rose suite-run --new</code>, from inside the suite directory, if you want to overwrite any previous runs of the suite and begin completely afresh (WARNING!! This will overwrite all existing model output and logs).
+    </li>
+</ul>
+</div>
+
+### RELOAD a suite
+<div style="text-align: justify">
+In some cases the suite needs to be updated without necessarily having to stop it (e.g. after fixing a typo in a file). Updating an active suite is called a 'reload', where the suite is 're-installed' and Cylc is updated with the changes (this is similar to a 'soft' restart, but with the new changes installed, so you may need to manually trigger failed tasks from the Cylc GUI).
+<br>
+To reload a suite run <code>rose suite-run --reload</code> from inside the suite directory.
 </div>
 
 ----------------------------------------------------------------------------------------
 
 ## Suite output files
+
 <div style="text-align: justify">
-TO DO
+All output files (as well as work files) are available on Gadi under <code>/scratch/$PROJECT/$USER/cylc-run/[suite-ID]</code> (also symlinked in <code>~/cylc-run/[suite-ID]</code>).
+<br>
+While the suite is running, files move between the <code>share</code> and the <code>work</code> directories.
+<br>
+At the end of each cycle, model output data and restart files are moved to <code>/scratch/$PROJECT/$USER/archive/[suite-name]</code>. 
+<br>
+This directory contains 2 subdirectories:
+<ul>
+    <li>
+        <code>history</code>
+        <br>
+        This is the directory where the model output data is found, separated for each model component: 
+        <ul>
+            <li>
+            <code>atm</code> &rarr; atmosphere (UM)
+            </li>
+            <li>
+            <code>cpl</code> &rarr; coupler (OASIS3-MCT)
+            </li>
+            <li>
+            <code>ocn</code> &rarr; ocean (MOM)
+            </li>
+            <li>
+            <code>ice</code> &rarr; ice (CICE)
+            </li>
+        </ul>
+        For the atmospheric output data, each file it is usually a <a href = "https://code.metoffice.gov.uk/doc/um/latest/papers/umdp_F03.pdf" target="_blank">UM fieldsfile</a> or netCDF file, formatted as <code>[suite-name]a.p[output stream identifier][year][month string]</code>.
+        <br>
+        <img src="../assets/history_data.gif" alt="History Data" />
+        <br>
+        For more details on how to control different output variables (STASH), and output streams, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>.
+    </li>
+    <li>
+        <code>restart</code>
+        <br>
+        This is the directory where the restart dumps are found, subdivided for each model component (see <code>history</code> folder above).
+        <br>
+        For the atmospheric restart files, each of them it is usually formatted as <code>[suite-name]a.da[year][month][day]_00</code>.
+        <br>
+        For more details on how to control the frequency and formatting of restart dumps, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>.
+    </li>
+</ul>
+
 </div>
 
 <!-- References -->
 <br>
-<h6>References:</h6>
+<h6>References</h6>
 <ul style="font-size:0.8em;">
     <li>
         <a href = "https://confluence.csiro.au/display/ACCESS/Using+CM2+suites+in+Rose+and+Cylc" target="_blank">https://confluence.csiro.au/display/ACCESS/Using+CM2+suites+in+Rose+and+Cylc</a>
+    </li>
+    <li>
+        <a href = "https://confluence.csiro.au/display/ACCESS/Understanding+CM2+output" target="_blank">https://confluence.csiro.au/display/ACCESS/Understanding+CM2+output</a>
     </li>
     <li>
         <a href = "https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf" target="_blank">https://nespclimate.com.au/wp-content/uploads/2020/10/Instruction-document-Getting_started_with_ACCESS.pdf</a>
